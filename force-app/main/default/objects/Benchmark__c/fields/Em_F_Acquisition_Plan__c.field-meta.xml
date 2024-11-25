@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_F_Acquisition_Plan__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A method to forecast need and an acquisition strategy are utilized.</description>
+    <inlineHelpText>A method to forecast need and an acquisition strategy are utilized.</inlineHelpText>
+    <label>Em-F Acquisition Plan</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

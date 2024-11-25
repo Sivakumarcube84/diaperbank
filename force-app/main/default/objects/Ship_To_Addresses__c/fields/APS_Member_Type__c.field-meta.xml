@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Member_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Account__r.APS_Member_Type__c, &quot;Activated&quot;), &quot;Activated&quot;, IF(ISPICKVAL(Account__r.APS_Member_Type__c, &quot;Allied Member&quot;), &quot;Allied Member&quot;, &quot;Left Network&quot;))</formula>
+    <label>APS Member Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

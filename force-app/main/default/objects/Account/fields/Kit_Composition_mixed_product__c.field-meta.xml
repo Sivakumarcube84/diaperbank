@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kit_Composition_mixed_product__c</fullName>
+    <description>Describe what is included in the period product kits that you distribute regularly.
+Example:  
+Kit A - 10 pads, 10 liners
+Kit B - 10 tampons, 10 liners</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe what is included in the period product kits that you distribute regularly.
+Example:  Kit A - 10 pads, 10 liners</inlineHelpText>
+    <label>Kit Composition-mixed product</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

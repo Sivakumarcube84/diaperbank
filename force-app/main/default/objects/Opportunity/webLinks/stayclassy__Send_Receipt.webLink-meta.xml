@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__Send_Receipt</fullName>
+    <availability>online</availability>
+    <description>Resend a receipt to the email stored in Classy for this donation</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Receipt</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>if (&apos;{!Opportunity.stayclassy__sc_order_id__c}&apos; != &apos;&apos;) { 
+if (confirm(&apos;Click OK to send receipt. Successfully sent message will show in your Chatter feed.&apos;) == true) { 
+window.parent.location.href=&apos;/apex/stayclassy__ClassyPageSendReceipt?id={!Opportunity.Id}&apos;; 
+} 
+} else { 
+alert(&apos;Cannot send: Opportunity record is not associated with a Classy transaction.&apos;); 
+}</url>
+</WebLink>

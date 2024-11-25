@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_G_Strategic_Planning__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Leadership has begun a strategic planning process (at least a draft, SMART goals, or logic model).</description>
+    <inlineHelpText>Leadership has begun a strategic planning process (at least a draft, SMART goals, or logic model).</inlineHelpText>
+    <label>Ex-G Strategic Planning</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

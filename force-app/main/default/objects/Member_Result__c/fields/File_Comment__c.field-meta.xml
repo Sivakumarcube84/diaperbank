@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>File_Comment__c</fullName>
+    <inlineHelpText>Briefly list or describe what&apos;s in the file. Use words to aid filtering: hi-res, video, etc.</inlineHelpText>
+    <label>File Comment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

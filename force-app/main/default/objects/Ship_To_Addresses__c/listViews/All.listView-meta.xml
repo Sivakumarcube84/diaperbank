@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Account__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>Shipping_City__c</columns>
+    <columns>Shipping_Street__c</columns>
+    <columns>NAME</columns>
+    <columns>Shipping_State__c</columns>
+    <columns>Shipping_Country__c</columns>
+    <columns>Shipping_Zip__c</columns>
+    <columns>Preferred_or_Qualifying_Ship_to_Address__c</columns>
+    <columns>Storage_Space_Type__c</columns>
+    <columns>Bay_Fits_53_ft_Truck__c</columns>
+    <columns>Inactive__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Loading_Dock_or_Forklift__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

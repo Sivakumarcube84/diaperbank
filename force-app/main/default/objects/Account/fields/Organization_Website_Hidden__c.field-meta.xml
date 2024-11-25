@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Website_Hidden__c</fullName>
+    <description>Field used to capture the organization website, and map it through to the Organization Account. This is necessary because the standard website field is mapped to the lead, and having the same website on the household account and Organization account leads to a duplicate error when running the process to populate data on the Organization Record.</description>
+    <label>Organization Website (Hidden)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

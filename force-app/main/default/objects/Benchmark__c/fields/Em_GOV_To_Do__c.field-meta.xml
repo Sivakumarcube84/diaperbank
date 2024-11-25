@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_GOV_To_Do__c</fullName>
+    <description>Number of Emerging-Level Governance Benchmarks (of 5) Not Yet Demonstrated</description>
+    <externalId>false</externalId>
+    <formula>5 - (IF(Em_G_Board2Gov__c, 1, 0) +
+IF(Em_G_Guidestar__c, 1, 0) +
+IF(Em_G_Insurance__c, 1, 0) +
+IF(Em_G_Multi_Yr_Strategy__c, 1, 0) +
+IF(Em_G_Nonprofit_Status__c, 1, 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Number of Emerging-Level Governance Benchmarks (of 5) Not Yet Demonstrated</inlineHelpText>
+    <label>Em GOV To-Do (5)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

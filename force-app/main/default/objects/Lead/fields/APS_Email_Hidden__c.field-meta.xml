@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Email_Hidden__c</fullName>
+    <description>This field is used to map the email address through to the Account &quot;APS Primary Email&quot; field during lead conversion</description>
+    <externalId>false</externalId>
+    <label>APS Email (Hidden)</label>
+    <required>false</required>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

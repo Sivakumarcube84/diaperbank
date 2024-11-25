@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFC_Grants_Received__c</fullName>
+    <inlineHelpText>The number of Funds For Change grants received by this organization. This number may include noncompetitive grants such as a scholarship to attend Lobby Day or funding to support a sole member in a near zero capacity state.</inlineHelpText>
+    <label>FFC Grants Received</label>
+    <summaryFilterItems>
+        <field>FFC_Participation__c.Status_of_Project__c</field>
+        <operation>contains</operation>
+        <value>Applied, Started, On-track at Mid-Year, Completed, Extended, Noncompliant</value>
+    </summaryFilterItems>
+    <summaryForeignKey>FFC_Participation__c.Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

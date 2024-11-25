@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Member_Portal_Access__c</fullName>
+    <inlineHelpText>a manual field to track who has been invited and is able to get into Experience cloud member portal</inlineHelpText>
+    <label>Member Portal Access</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Eligible</fullName>
+                <default>false</default>
+                <label>Eligible</label>
+            </value>
+            <value>
+                <fullName>Enabled-Invited</fullName>
+                <default>false</default>
+                <label>Enabled-Invited</label>
+            </value>
+            <value>
+                <fullName>Active Logged In</fullName>
+                <default>false</default>
+                <label>Active Logged In</label>
+            </value>
+            <value>
+                <fullName>Access Issue-Enable</fullName>
+                <default>false</default>
+                <label>Access Issue-Enable</label>
+            </value>
+            <value>
+                <fullName>Access Issue-Login</fullName>
+                <default>false</default>
+                <label>Access Issue-Login</label>
+            </value>
+            <value>
+                <fullName>NA-uneligible</fullName>
+                <default>false</default>
+                <label>NA-uneligible</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

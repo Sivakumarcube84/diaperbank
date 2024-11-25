@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Member_Type__c</fullName>
+    <description>This is a text field that states if an organization is a member of NDBN, APS, or both</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a text field that states if an organization is a member of NDBN, APS, or both</inlineHelpText>
+    <label>Single or Dual Membership</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

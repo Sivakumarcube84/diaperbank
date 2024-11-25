@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>All APS (PS only and Duel)</audienceName>
+    <container>Member Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.APS_Member_Type__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Allied Member</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>ndbn programs user</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>ndbn standard user</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>ndbn system administrator</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AnyCriterionMatches</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>973cdeac-1827-458f-b2d3-b85d7d28c053</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Bulk_Donations_U_by_Kotex_Bulk_Donations_U_by_Kotex_Page</targetValue>
+        </target>
+        <target>
+            <groupName>094f87be-6844-444b-8bc3-fd61445021ed$#$9d685aba-8d92-460a-8a98-886319962e60</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>5f4d9b7b-cd63-4aab-a129-9907a9e890f9</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Period_Poverty_Awareness_Week_Period_Poverty_Awareness_Week_Page</targetValue>
+        </target>
+        <target>
+            <groupName>08367dc0-8dfd-483b-8a58-68d73027acb6</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Support_for_Allied_Period_Supply_Banks_Support_for_Allied_Period_Supply_Banks_Page</targetValue>
+        </target>
+        <target>
+            <groupName>50e595cf-e432-47a3-bf08-578d682e92ef$#$cf4b78c1-0cb9-44ae-994c-915fa46921da</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Support_Through_Research_Rich_Content_Editor_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>1bf9f421-6c50-46bc-a0f8-ff8b230f1cf4$#$8c76e794-f67b-4517-886a-cca7e8a9e6ed</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Events_1_CMS_Collection_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

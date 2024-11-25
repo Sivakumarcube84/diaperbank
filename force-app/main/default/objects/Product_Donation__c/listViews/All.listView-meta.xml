@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Member_ID__c</columns>
+    <columns>Account__c</columns>
+    <columns>Delivery_Date__c</columns>
+    <columns>Quantity__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>In_kind_value_formula__c</columns>
+    <columns>Amount_Billed__c</columns>
+    <columns>Invoice__c</columns>
+    <columns>Donor_Note__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Delivery_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>6/1/2024</value>
+    </filters>
+    <filters>
+        <field>Quantity__c</field>
+        <operation>lessOrEqual</operation>
+    </filters>
+    <label>All</label>
+</ListView>

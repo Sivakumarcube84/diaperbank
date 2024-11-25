@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_kind_value_formula__c</fullName>
+    <description>2019 - 2021 in-kind values: 0.12 for diapers, .06 for period supplies, .0203 for wipes, .60 briefs, 4 books</description>
+    <formula>IF(TEXT(Product_Type__c) = &quot;Diapers&quot;, 0.12 *  Quantity__c, 
+ IF(TEXT(Product_Type__c) = &quot;Wipes&quot;, 0.0203 *  Quantity__c, 
+  IF(TEXT(Product_Type__c) = &quot;Pads &amp; Liners&quot;, 0.06 *  Quantity__c, 
+   IF(TEXT(Product_Type__c) = &quot;Books&quot;, 4 *  Quantity__c, 
+    IF(TEXT(Product_Type__c)= &quot;Adult Briefs&quot;, 0.6 *  Quantity__c, 
+     IF(TEXT(Product_Type__c) = &quot;Hand Sanitizer&quot;, 4 * Quantity__c,
+      IF(TEXT(Product_Type__c) = &quot;Thinx&quot;, 6.60 * Quantity__c, null
+      )
+     )
+    )
+   )
+  )
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The formula multiplies the product type&apos;s in-kind value x the quantity. 
+2019 -21 in-kind values: 0.12 for diapers, .06 for period supplies, .0203 for wipes, .60 briefs, 4 books.
+It can be edited to have specific values based on delivery dates.</inlineHelpText>
+    <label>In-kind Value Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

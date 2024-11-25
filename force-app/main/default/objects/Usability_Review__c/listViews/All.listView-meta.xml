@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Member_Results__c</columns>
+    <columns>NAME</columns>
+    <columns>NDBN_Program__c</columns>
+    <columns>Account__c</columns>
+    <columns>Program_Relevance__c</columns>
+    <columns>Relatable_Content__c</columns>
+    <columns>Strong_Support__c</columns>
+    <columns>Usable_content__c</columns>
+    <columns>Idea_for_use__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Usable_content__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <label>All</label>
+</ListView>

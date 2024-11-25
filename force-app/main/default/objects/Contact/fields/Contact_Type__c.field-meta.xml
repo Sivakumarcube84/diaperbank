@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Type__c</fullName>
+    <label>Contact Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Community advocate/policy advocate</fullName>
+                <default>false</default>
+                <label>Community advocate/policy advocate</label>
+            </value>
+            <value>
+                <fullName>Donor</fullName>
+                <default>false</default>
+                <label>Donor</label>
+            </value>
+            <value>
+                <fullName>Donor prospect</fullName>
+                <default>false</default>
+                <label>Donor prospect</label>
+            </value>
+            <value>
+                <fullName>Foundation Contact</fullName>
+                <default>false</default>
+                <label>Foundation Contact</label>
+            </value>
+            <value>
+                <fullName>Legislative Staff</fullName>
+                <default>false</default>
+                <label>Legislative Staff</label>
+            </value>
+            <value>
+                <fullName>Legislator</fullName>
+                <default>false</default>
+                <label>Legislator</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Mike Berman Contact</fullName>
+                <default>false</default>
+                <label>Mike Berman Contact</label>
+            </value>
+            <value>
+                <fullName>NDBN Board member</fullName>
+                <default>false</default>
+                <label>NDBN Board member</label>
+            </value>
+            <value>
+                <fullName>NDBN Staff</fullName>
+                <default>false</default>
+                <label>NDBN Staff</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Past NDBN board member</fullName>
+                <default>false</default>
+                <label>Past NDBN board member</label>
+            </value>
+            <value>
+                <fullName>Diaper Manufacturer/Distributor</fullName>
+                <default>false</default>
+                <label>Diaper Manufacturer/Distributor</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Information about diaper drives</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Information about diaper drives</label>
+            </value>
+            <value>
+                <fullName>Looking for diapers/agency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Looking for diapers/agency</label>
+            </value>
+            <value>
+                <fullName>Looking for diapers/individual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Looking for diapers/individual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2023_Funds_for_Change_Grants</fullName>
+    <columns>Account__c</columns>
+    <columns>State__c</columns>
+    <columns>City_HQ__c</columns>
+    <columns>Award_Amount__c</columns>
+    <columns>Project_Type__c</columns>
+    <columns>Project_Goals__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Staff_notes_and_comments__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>Status_of_Project__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>54321</value>
+    </filters>
+    <filters>
+        <field>Program_Offering__c</field>
+        <operation>contains</operation>
+        <value>2023</value>
+    </filters>
+    <filters>
+        <field>Status_of_Project__c</field>
+        <operation>notContain</operation>
+        <value>Did not fund</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>Special</value>
+    </filters>
+    <label>2023 Funds for Change Grants</label>
+</ListView>

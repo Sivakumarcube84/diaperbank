@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Huggies_2024_Donations__c</fullName>
+    <label>Huggies 2024 Donations</label>
+    <summarizedField>Product_Donation__c.Quantity__c</summarizedField>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Delivery_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2024</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Delivery_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>12/31/2024</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Diapers</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Product_Donation__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

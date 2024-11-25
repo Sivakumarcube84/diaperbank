@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDBN_Members</fullName>
+    <columns>Group__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>APS_Member_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npe01__One2OneContact__c</columns>
+    <columns>FA_Date_Submitted__c</columns>
+    <columns>Total_Diaper_Distribution_Last_Year__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Service_Profile_Note__c</columns>
+    <columns>Children_Served_Monthly__c</columns>
+    <columns>Guidestar_Profile__c</columns>
+    <columns>Service_Profile__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Non_Basic_Need_Bank</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>A11,A12,Addams</value>
+    </filters>
+    <label>All Member Organizations</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <group>Staff_List_Share</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_F_Funding_Streams__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Fundraising team actively receives funding through a variety of types of funding streams.</description>
+    <inlineHelpText>Fundraising team actively receives funding through a variety of types of funding streams.</inlineHelpText>
+    <label>Su-F Funding Streams</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

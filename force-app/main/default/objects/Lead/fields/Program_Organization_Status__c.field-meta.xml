@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Organization_Status__c</fullName>
+    <label>Program Organization Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>501(c)(3)</fullName>
+                <default>false</default>
+                <label>501(c)(3)</label>
+            </value>
+            <value>
+                <fullName>Church In Good Standing</fullName>
+                <default>false</default>
+                <label>Church In Good Standing</label>
+            </value>
+            <value>
+                <fullName>Public School/Local Government</fullName>
+                <default>false</default>
+                <label>Public School/Local Government</label>
+            </value>
+            <value>
+                <fullName>Fiscally sponsored</fullName>
+                <default>false</default>
+                <label>Fiscally sponsored</label>
+            </value>
+            <value>
+                <fullName>Applied for 501(c)(3)</fullName>
+                <default>false</default>
+                <label>Applied for 501(c)(3)</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

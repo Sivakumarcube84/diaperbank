@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__Discount_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the discount code applied to an orderv (The code of the promo code applied to the transaction.)</description>
+    <externalId>false</externalId>
+    <label>Promo Code</label>
+    <length>45</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

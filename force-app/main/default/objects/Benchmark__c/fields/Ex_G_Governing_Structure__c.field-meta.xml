@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_G_Governing_Structure__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Governing structure: Organization or program has a board of directors or advisory committee.</description>
+    <inlineHelpText>Governing structure: Organization or program has a board of directors or advisory committee.</inlineHelpText>
+    <label>Ex-G Governing Structure</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

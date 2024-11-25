@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_APS_Product_Types_Value__c</fullName>
+    <label>New APS Product Types Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pads</fullName>
+                <color>#FFFFFF</color>
+                <default>false</default>
+                <label>Pads</label>
+            </value>
+            <value>
+                <fullName>Liners</fullName>
+                <color>#FFFFFF</color>
+                <default>false</default>
+                <label>Liners</label>
+            </value>
+            <value>
+                <fullName>Tampons</fullName>
+                <color>#FFFFFF</color>
+                <default>false</default>
+                <label>Tampons</label>
+            </value>
+            <value>
+                <fullName>Reusable Cup</fullName>
+                <color>#FFFFFF</color>
+                <default>false</default>
+                <label>Reusable Cup</label>
+            </value>
+            <value>
+                <fullName>Reusable Cloth Pads</fullName>
+                <color>#FFFFFF</color>
+                <default>false</default>
+                <label>Reusable Cloth Pads</label>
+            </value>
+            <value>
+                <fullName>Other Item Not Listed</fullName>
+                <color>#FFFFFF</color>
+                <default>false</default>
+                <label>Other Item Not Listed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

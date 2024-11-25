@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <constants>
+        <name>APSOnly</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>APS Only</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>BothMemberType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Both Member Type</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>DiaperOnly</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Diaper Banks Only</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>Spaces</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>   </stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Is_APS</name>
+        <label>Is APS Member Type Allied Member</label>
+        <locationX>875</locationX>
+        <locationY>599</locationY>
+        <defaultConnector>
+            <targetReference>Set_to_Diaper_Only</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not An Allied Member</defaultConnectorLabel>
+        <rules>
+            <name>Yes_an_Allied_Member</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.APS_Member_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Allied Member</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Overall_Member_Type_to_Both</targetReference>
+            </connector>
+            <label>Yes an Allied Member</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_APS_Only</name>
+        <label>Is APS Only</label>
+        <locationX>776</locationX>
+        <locationY>359</locationY>
+        <defaultConnector>
+            <targetReference>Is_Member_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NOT APS ONLY</defaultConnectorLabel>
+        <rules>
+            <name>YES_APS_Only</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.NDBN_Member_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>APS only</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Overall_Member_Type_to_APS_Only</targetReference>
+            </connector>
+            <label>YES APS Only</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Member_Type</name>
+        <label>Is a Diaper Bank Member Type</label>
+        <locationX>1073</locationX>
+        <locationY>479</locationY>
+        <defaultConnector>
+            <targetReference>Set_Overall_Type_to_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not A Diaper Bank Member</defaultConnectorLabel>
+        <rules>
+            <name>Yes_A_Diaper_Bank_Member</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.NDBN_Member_Type__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Certified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.NDBN_Member_Type__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Established</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.NDBN_Member_Type__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Sustaining</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_APS</targetReference>
+            </connector>
+            <label>Yes A Diaper Bank Member</label>
+        </rules>
+    </decisions>
+    <description>Flow sets Over all Member Type Field based on NDBN Member Type and APS member type. This field is used for Survey processing. 04/19/23 - added code to update new picklist field with the multi-select picklist field NDBN_Member_Type.</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Overall Member Type {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Overall Member Type</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Overall_Member_Type_to_APS_Only</name>
+        <label>Set Overall Member Type to APS Only</label>
+        <locationX>479</locationX>
+        <locationY>479</locationY>
+        <inputAssignments>
+            <field>Diaper_Bank_Member_Type__c</field>
+            <value>
+                <elementReference>$Record.NDBN_Member_Type__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Overall_Member_Type__c</field>
+            <value>
+                <elementReference>APSOnly</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Overall_Member_Type_to_Both</name>
+        <label>Set Overall Member Type to Both</label>
+        <locationX>744</locationX>
+        <locationY>720</locationY>
+        <inputAssignments>
+            <field>Diaper_Bank_Member_Type__c</field>
+            <value>
+                <elementReference>$Record.NDBN_Member_Type__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Overall_Member_Type__c</field>
+            <value>
+                <elementReference>BothMemberType</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Overall_Type_to_Blank</name>
+        <label>Set Overall Type to Blank</label>
+        <locationX>1271</locationX>
+        <locationY>599</locationY>
+        <inputAssignments>
+            <field>Diaper_Bank_Member_Type__c</field>
+            <value>
+                <elementReference>$Record.NDBN_Member_Type__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Overall_Member_Type__c</field>
+            <value>
+                <elementReference>Spaces</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_to_Diaper_Only</name>
+        <label>Set to Diaper Only</label>
+        <locationX>1007</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>Diaper_Bank_Member_Type__c</field>
+            <value>
+                <elementReference>$Record.NDBN_Member_Type__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Overall_Member_Type__c</field>
+            <value>
+                <elementReference>DiaperOnly</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Is_APS_Only</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

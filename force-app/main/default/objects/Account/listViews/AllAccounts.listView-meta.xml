@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>Member_ID__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>X18_Character_Account_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Diaper_Bank_Member_Type__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>Overall_Member_Type__c</columns>
+    <columns>APS_Member_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Accounts</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <group>Staff_List_Share</group>
+    </sharedTo>
+</ListView>

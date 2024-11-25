@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Benchmark__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Path to Targeted TA</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Account__c</fieldNames>
+        <fieldNames>BAQ_Date_Submitted__c</fieldNames>
+        <fieldNames>BAQ_URL__c</fieldNames>
+        <fieldNames>Ex_Bench_To_Do__c</fieldNames>
+        <info>&lt;p&gt;Ready to read! Open the record and review.&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

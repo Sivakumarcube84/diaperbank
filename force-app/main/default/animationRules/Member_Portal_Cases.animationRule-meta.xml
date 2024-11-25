@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>often</animationFrequency>
+    <developerName>Member_Portal_Cases</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Member Portal Cases</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>Member_Portal_Requests</recordTypeName>
+    <sobjectType>Case</sobjectType>
+    <targetField>Status</targetField>
+    <targetFieldChangeToValues>Closed</targetFieldChangeToValues>
+</AnimationRule>

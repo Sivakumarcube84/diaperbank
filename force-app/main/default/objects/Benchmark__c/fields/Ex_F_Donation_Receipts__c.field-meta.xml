@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_F_Donation_Receipts__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Receipts are provided for all donations.</description>
+    <inlineHelpText>Receipts are provided for all donations.</inlineHelpText>
+    <label>Ex-F Donation Receipts</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

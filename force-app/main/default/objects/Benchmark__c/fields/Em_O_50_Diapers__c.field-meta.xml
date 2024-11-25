@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_O_50_Diapers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Children served are provided at least 50 diapers per month (for at least 90% of agencies or client-recipients serviced).</description>
+    <inlineHelpText>Children served are provided at least 50 diapers per month (for at least 90% of agencies or client-recipients serviced).</inlineHelpText>
+    <label>Em-O 50 Diapers</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

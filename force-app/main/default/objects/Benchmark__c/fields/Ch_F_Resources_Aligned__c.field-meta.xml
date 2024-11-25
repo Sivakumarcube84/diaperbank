@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_F_Resources_Aligned__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Financial and community resources are aligned to improve outcomes.</description>
+    <inlineHelpText>Financial and community resources are aligned to improve outcomes.</inlineHelpText>
+    <label>Ch-F Resources Aligned</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

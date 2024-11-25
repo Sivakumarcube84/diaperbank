@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Member_ID__c</columns>
+    <columns>NAME</columns>
+    <columns>Account_Name__c</columns>
+    <columns>APS_Active__c</columns>
+    <columns>Diaper_Bank_Active__c</columns>
+    <columns>County_Name__c</columns>
+    <columns>Coverage_Begin_Date__c</columns>
+    <columns>Coverage_end_Date__c</columns>
+    <columns>State__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

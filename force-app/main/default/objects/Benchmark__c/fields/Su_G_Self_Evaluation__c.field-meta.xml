@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_G_Self_Evaluation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Board has implemented a mechanism for self-evaluation.</description>
+    <inlineHelpText>Board has implemented a mechanism for self-evaluation.</inlineHelpText>
+    <label>Su-G Self-Evaluation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

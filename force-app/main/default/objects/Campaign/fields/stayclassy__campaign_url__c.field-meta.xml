@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__campaign_url__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( stayclassy__Campaign_Path__c  = null,
+IF(stayclassy__sc_event_id__c &gt; 0 &amp;&amp; ISPICKVAL(stayclassy__Classy_Campaign_Type__c, &quot;Fundraiser&quot;), &quot;https://&quot; &amp;  BLANKVALUE($Setup.stayclassy__Classy_Profile_Settings__c.stayclassy__Classy_Domain__c, &quot;classy.org&quot;) &amp; &quot;/fundraise?fcid=&quot; &amp; text(stayclassy__sc_event_id__c), 
+IF(stayclassy__sc_event_id__c &gt; 0 &amp;&amp; ISPICKVAL(stayclassy__Classy_Campaign_Type__c, &quot;Team&quot;), &quot;https://&quot; &amp;  BLANKVALUE($Setup.stayclassy__Classy_Profile_Settings__c.stayclassy__Classy_Domain__c, &quot;classy.org&quot;) &amp; &quot;/fundraise/team?ftid=&quot; &amp; text(stayclassy__sc_event_id__c), 
+IF(stayclassy__sc_event_id__c &gt; 0 &amp;&amp; ISPICKVAL(stayclassy__Classy_Campaign_Type__c, &quot;Campaign&quot;), &quot;https://&quot; &amp;  BLANKVALUE($Setup.stayclassy__Classy_Profile_Settings__c.stayclassy__Classy_Domain__c, &quot;classy.org&quot;) &amp; &quot;/events/detail?eid=&quot; &amp; text(stayclassy__sc_event_id__c), 
+&quot;&quot;
+))), &quot;https://&quot; &amp; BLANKVALUE($Setup.stayclassy__Classy_Profile_Settings__c.stayclassy__Classy_Domain__c, &quot;classy.org&quot;) &amp; stayclassy__Campaign_Path__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Campaign URL</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

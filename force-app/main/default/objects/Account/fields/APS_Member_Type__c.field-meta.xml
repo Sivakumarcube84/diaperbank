@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Member_Type__c</fullName>
+    <description>Allied Members have applied and been approved to join APS.
+Both NDBN members and organizations outside NDBN can be Allied members.
+Accepted Values are: Interested, Allied Organization</description>
+    <inlineHelpText>Membership status for Alliance for Period Supplies</inlineHelpText>
+    <label>APS Member Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applicant</fullName>
+                <default>false</default>
+                <label>Applicant</label>
+            </value>
+            <value>
+                <fullName>Allied Member</fullName>
+                <default>false</default>
+                <label>Allied Member</label>
+            </value>
+            <value>
+                <fullName>Left Network</fullName>
+                <default>false</default>
+                <label>Left Network</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

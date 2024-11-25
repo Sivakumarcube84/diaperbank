@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFC_Most_Recent_Grant__c</fullName>
+    <label>FFC Most Recent Grant</label>
+    <summarizedField>FFC_Participation__c.Start_Date__c</summarizedField>
+    <summaryForeignKey>FFC_Participation__c.Account__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

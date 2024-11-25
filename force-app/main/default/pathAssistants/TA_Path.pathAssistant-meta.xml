@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>TA Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CreatedDate</fieldNames>
+        <fieldNames>ClosedDate</fieldNames>
+        <fieldNames>Data_Quality_Score__c</fieldNames>
+        <fieldNames>Data_Quality_Description__c</fieldNames>
+        <info>&lt;p&gt;Case closed! At some point soon, a customer feedback survey will be triggered here.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Add any notes to to the file if needed.&lt;/p&gt;</info>
+        <picklistValueName>Developing Solution</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>ContactEmail</fieldNames>
+        <fieldNames>ContactPhone</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <info>&lt;p&gt;Check in on this case to see if it can move forward.&lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <info>&lt;p&gt;A new request has come in for technical assistance!&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Check the member&amp;#39;s standing. (Survey and Dues up to date).&lt;/p&gt;&lt;p&gt;Does the member qualify or are they ready for this type of TA?&lt;/p&gt;</info>
+        <picklistValueName>Qualifying Member</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>ContactEmail</fieldNames>
+        <fieldNames>ContactPhone</fieldNames>
+        <info>&lt;p&gt;If you&amp;#39;re waiting for the member to act, you could create a task to remind you both to check in.&lt;/p&gt;</info>
+        <picklistValueName>Waiting on Member</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Technical_Assistance</recordTypeName>
+</PathAssistant>

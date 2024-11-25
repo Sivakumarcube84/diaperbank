@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>County_Information__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>County Information</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.State__c</field>
+            <operation>equals</operation>
+            <valueField>County_Information__c.State_Name__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>County_Information__c</referenceTo>
+    <relationshipLabel>Coverages</relationshipLabel>
+    <relationshipName>Coverages</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

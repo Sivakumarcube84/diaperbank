@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <constants>
+        <name>con_BenchmarkAssessmentID</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>01I3o000002N6ue</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Nonprofit</description>
+        <name>con_BenchmarkNonprofitRecordTypeId</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>012Pj000000P1s9IAC</stringValue>
+        </value>
+    </constants>
+    <environments>Default</environments>
+    <interviewLabel>Benchmarks for Portal Sustaining {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Benchmarks for Portal Sustaining</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Benchmarks</name>
+        <label>Get Benchmarks</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>BenchmarksSustainingOrgLeadDisplay</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>BAQ_Date_Submitted__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateValue>2015-12-31</dateValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Benchmark__c</object>
+        <sortField>BAQ_Date_Submitted__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Contact</name>
+        <label>Get Contact</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Benchmarks</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>BenchmarksSustainingOrgLeadDisplay</name>
+        <label>BenchmarksSustainingOrgLeadDisplay</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstLeadershipOrganization</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;LEADERSHIP &amp;amp; ORGANIZATION&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>AnnualReport</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_G_Annual_Report__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>FullGov</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_G_Full_Gov__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>SelfEvaluation</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Su_G_Self_Evaluation__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>NPSuccessionPlan</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Su_G_Staff_Development__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section2_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchSusOrgLeadAnnualReport</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Produces an {!linksugannualreport} that includes a diaper or period supply program and is available to the public.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchSusOrgLeadFullGov</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Organization has a board working in {!linksugfullgov}.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchSusOrgLeadSelfEvaluation</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has a board-implemented mechanism for &lt;/span&gt;&lt;a href=&quot;#&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 14px;&quot;&gt;self-evaluation&lt;/a&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>NonProfit</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Organization provides {!linksugstaffdevelopment} for staff.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstProgramsOperations</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;PROGRAMS &amp;amp; OPERATIONS&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section4</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section4_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Warehouse</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_O_Warehouse__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>NonresStorage</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Su_O_Regional_Network__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>DataSystem</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_O_Data_Systems__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section4_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchSusOrgWarehouse</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Owns or leases a {!linksupwarehouse} and can receive donations for regional basic needs programs.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchSusOrgRegionalNetwork</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Regularly contributes identifiable resources to {!linksupregionalnetwork} of basic needs programs.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchEstOrgDataCompliance</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has a {!linksupdatasystem} that allows for timely sharing of information in order to improve services.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section5</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section5_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstFundraisingFinance</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;FUNDRAISING &amp;amp; FINANCE&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section6</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section6_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>FundingStreams</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_F_Funding_Streams__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>Grants</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_F_Grants__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>GAAPComp</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_F_GAAP_Comp__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>AuditReview</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_F_Audit_Review__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section6_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchSusOrgFundingStreams</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Receives funding through a&lt;/span&gt;&lt;a href=&quot;#&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 14px;&quot;&gt; &lt;/a&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;{!linksuffundingstreams} and is able to receive federal funding.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchEstOrgGrants</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Routinely {!linksufgrants} and is compliant with all grant reporting requirements.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchSusOrgGAAPComp</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has financial reporting that is {!linksufgaapcomp}.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchSusOrgAuditReview</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has an {!linksufauditreview} or review conducted by an independent CPA firm.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section7</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section7_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstCommunicationsAdvocacy</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;COMMUNICATIONS &amp;amp; ADVOCACY&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksSustainingOrgLeadDisplay_Section8</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section8_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Authority</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_A_Authority__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>NationalLocal</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_A_National_Local__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>Representation</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Su_A_Representation__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksSustainingOrgLeadDisplay_Section8_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchSusCertOrgAuthority</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Is recognized as a {!linksuaauthority} on diaper need or period poverty in the context of regional poverty issues.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchSusOrgNationalLocal</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Participates in {!linksuanationalocal}, translating them into local level activities.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>CommunityRepresentation</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Encourages {!linksuarepresentation} through strategic collaborations.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Contact</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksuaauthority</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq4#Su_A_Authority&quot; target=&quot;_top&quot;&gt;regional authority&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksuanationalocal</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq4#Su_A_National_Local&quot; target=&quot;_top&quot;&gt;national level initiatives&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksuarepresentation</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq4#Su_A_Representation&quot; target=&quot;_top&quot;&gt;community representation&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksufauditreview</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Su_F_Audit_Review&quot; target=&quot;_top&quot;&gt;annual audit&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksuffundingstreams</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Su_F_Funding_Streams&quot; target=&quot;_top&quot;&gt;variety of types of funding streams&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksufgaapcomp</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Su_F_GAAP_Comp&quot; target=&quot;_top&quot;&gt;GAAP compliant&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksufgrants</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Su_F_Grants&quot; target=&quot;_top&quot;&gt;secures grants&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksugannualreport</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq1#Su_G_Annual_Report&quot; target=&quot;_top&quot;&gt;annual report&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksugfullgov</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq1#Su_G_Full_Gov&quot; target=&quot;_top&quot;&gt;full governance&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksugstaffdevelopment</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq1#Su_G_Staff_Development&quot; target=&quot;_top&quot;&gt;professional development opportunities and fair market pay rates&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksupdatasystem</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq2#Su_P_Data_Systems&quot; target=&quot;_top&quot;&gt;data system&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksupregionalnetwork</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq2#Su_P_Regional_Network&quot; target=&quot;_top&quot;&gt;help build the regional capacities&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linksupwarehouse</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq2#Su_P_Warehouse&quot; target=&quot;_top&quot;&gt;warehouse&lt;/a&gt;</text>
+    </textTemplates>
+</Flow>

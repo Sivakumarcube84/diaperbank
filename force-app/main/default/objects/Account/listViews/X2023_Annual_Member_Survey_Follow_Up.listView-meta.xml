@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2023_Annual_Member_Survey_Follow_Up</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>Assigned_staff__c</columns>
+    <columns>Annual_Survey_Review_Note__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Dues_Expiration_NDBN_only__c</columns>
+    <columns>FA_Date_Submitted__c</columns>
+    <columns>Total_Diaper_Distribution_Last_Year__c</columns>
+    <columns>Past_Diaper_Distribution_2022__c</columns>
+    <columns>X2022_APS_Total_Distribution__c</columns>
+    <columns>Past_APS_Distribution_2022__c</columns>
+    <columns>Governing_Organization_Exact_Name__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>APS_Member_Type__c</columns>
+    <columns>Group__c</columns>
+    <columns>Service_Profile__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Diaper_Bank</value>
+    </filters>
+    <filters>
+        <field>NDBN_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>APS only,Certified,Certified Member,Change Leader,Established,Established Member,Sustaining</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>A11,A12,Addams</value>
+    </filters>
+    <filters>
+        <field>FA_Date_Submitted__c</field>
+        <operation>lessOrEqual</operation>
+        <value>1/16/2024</value>
+    </filters>
+    <filters>
+        <field>FA_Date_Submitted__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>2023 Annual Member Survey Follow Up</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <group>Staff_List_Share</group>
+    </sharedTo>
+</ListView>

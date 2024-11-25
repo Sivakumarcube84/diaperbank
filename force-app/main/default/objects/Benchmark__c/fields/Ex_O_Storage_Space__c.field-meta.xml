@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_O_Storage_Space__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Adequate storage space exclusively for diapers is dry and secure.</description>
+    <inlineHelpText>Adequate storage space exclusively for diapers is dry and secure.</inlineHelpText>
+    <label>Ex-O Storage Space</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

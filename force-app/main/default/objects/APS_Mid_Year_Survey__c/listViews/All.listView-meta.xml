@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Avg_Number_People_Served_Monthly__c</columns>
+    <columns>Total_Period_Productsd_Distributed__c</columns>
+    <columns>Total_Number_of_Pads_Distributed_between__c</columns>
+    <columns>Total_Number_of_Tampons_Distributed__c</columns>
+    <columns>Total_Number_of_Liners_Distributed__c</columns>
+    <columns>Number_of_Partner_Agencies_Served__c</columns>
+    <columns>Six_Month_Outlook__c</columns>
+    <columns>Survey_submit_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Member_ID__c</columns>
+    <columns>APS_Year__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>APS_Year__c</field>
+        <operation>equals</operation>
+        <value>2023</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>notContain</operation>
+        <value>a11</value>
+    </filters>
+    <label>All</label>
+</ListView>

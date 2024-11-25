@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Web_Social</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Update Web &amp; Social</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>https://ndbn.force.com/memberportal/s/website-and-social-media-updates</url>
+</WebLink>

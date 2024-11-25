@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Leads_APS_vs_NDBN_Issue</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <columns>npsp__CompanyState__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>APS_Program_Status__c</columns>
+    <columns>Internal_Staff_Note__c</columns>
+    <columns>Relationships_with_Other_Agencies__c</columns>
+    <columns>Program_Development_To_Date__c</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>Program_Organization_Status__c</columns>
+    <columns>APS_Counties_Served__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Open - Not Contacted</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.APS,Lead.Diapers</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>9/1/2024 12:00 AM</value>
+    </filters>
+    <label>All Open Leads-APS and NDBN</label>
+</ListView>

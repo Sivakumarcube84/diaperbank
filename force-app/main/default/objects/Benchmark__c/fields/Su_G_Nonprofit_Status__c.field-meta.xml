@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_G_Nonprofit_Status__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Nonprofit status: Members must be 501c3 nonprofit organizations.</description>
+    <inlineHelpText>Nonprofit status: Members must be 501c3 nonprofit organizations.</inlineHelpText>
+    <label>Su-G Nonprofit Status</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

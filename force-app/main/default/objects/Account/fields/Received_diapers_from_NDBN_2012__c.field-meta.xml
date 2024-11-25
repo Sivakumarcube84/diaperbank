@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_diapers_from_NDBN_2012__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identifies diaper banks that received diapers from NDBN and/or K.I.D.S. in 2012</description>
+    <label>Received diapers from NDBN 2012</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse_Area_SF_MP__c</fullName>
+    <description>If you can take responsibility for moving inventory from your primary warehouse space to secondary storage space, you may enter the sum of multiple storage areas.</description>
+    <externalId>false</externalId>
+    <label>Warehouse Area (SF) MP</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

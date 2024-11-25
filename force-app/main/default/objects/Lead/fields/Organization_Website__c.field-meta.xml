@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Website__c</fullName>
+    <description>Field used to capture the orgnaizations website, and map it through to the Organization Account</description>
+    <label>Organization Website</label>
+    <required>false</required>
+    <type>Url</type>
+</CustomField>

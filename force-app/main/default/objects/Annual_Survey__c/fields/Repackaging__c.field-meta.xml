@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repackaging__c</fullName>
+    <inlineHelpText>Are period products repackaged and if so is it mainly to standardize inventory into uniform packs or is it to create mixed packs of various product for the clients served?</inlineHelpText>
+    <label>Repackaging</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Mixed Packs</fullName>
+                <default>false</default>
+                <label>Mixed Packs</label>
+            </value>
+            <value>
+                <fullName>Uniform Packs</fullName>
+                <default>false</default>
+                <label>Uniform Packs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

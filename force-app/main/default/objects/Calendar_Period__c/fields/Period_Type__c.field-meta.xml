@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Period_Type__c</fullName>
+    <label>Period Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calendar Year</fullName>
+                <default>false</default>
+                <label>Calendar Year</label>
+            </value>
+            <value>
+                <fullName>Fiscal Year</fullName>
+                <default>false</default>
+                <label>Fiscal Year</label>
+            </value>
+            <value>
+                <fullName>Calendar Quarter</fullName>
+                <default>false</default>
+                <label>Calendar Quarter</label>
+            </value>
+            <value>
+                <fullName>Fiscal Quarter</fullName>
+                <default>false</default>
+                <label>Fiscal Quarter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

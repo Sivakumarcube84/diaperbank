@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BIPOC_led_APS_program__c</fullName>
+    <formula>IF (OR(APS_Primary_Contact__r.Black_African_American_African__c,APS_Primary_Contact__r.Asian_American__c, APS_Primary_Contact__r.Hispanic_Latinx__c,  APS_Primary_Contact__r.Multi_racial_Multi_ethnic__c,  APS_Primary_Contact__r.Native_American_Indigenous__c,  APS_Primary_Contact__r.Native_Hawaiian_or_Pacific_Islander__c),TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BIPOC-led APS program</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

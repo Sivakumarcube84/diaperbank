@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_FUN_To_Do__c</fullName>
+    <description>Number of Exploring-Level Fundraising and Finance Benchmarks (of 5) Not Yet Demonstrated</description>
+    <externalId>false</externalId>
+    <formula>5 - (IF(Ex_F_Bank_Accounting__c, 1, 0) +
+IF(Ex_F_Basic_Budget__c, 1, 0) +
+IF(Ex_F_Development_Areas_2__c, 1, 0) +
+IF(Ex_F_Donation_Receipts__c, 1, 0) +
+IF(Ex_F_Fundraising_Plan__c, 1, 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Number of Exploring-Level Fundraising and Finance Benchmarks (of 5) Not Yet Demonstrated</inlineHelpText>
+    <label>Ex FUN To-Do (5)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

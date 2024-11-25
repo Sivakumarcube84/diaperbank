@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_A_NDBN_Brand__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Agreement to adhere to use of NDBN brand name, tagline, logo for network communication and any NDBN messaging. In compliance with NDBN&apos;s membership terms to adhere to use of NDBN&apos;s brand. Reports to stakeholders that highlight changes in population-based outcomes link these successes to the organization or program&apos;s affiliation with the National Diaper Bank Network.</description>
+    <inlineHelpText>Agreement to adhere to use of NDBN brand name, tagline, logo for network communication and any NDBN messaging. In compliance with NDBN&apos;s membership terms to adhere to use of NDBN&apos;s brand.</inlineHelpText>
+    <label>Ch-A NDBN Brand</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

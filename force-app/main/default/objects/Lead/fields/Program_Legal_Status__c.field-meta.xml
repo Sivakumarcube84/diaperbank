@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Legal_Status__c</fullName>
+    <description>Used to capture the current programs legal status from the NDBN Interest Form</description>
+    <label>Program Legal Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>501(c)(3)</fullName>
+                <default>false</default>
+                <label>501(c)(3)</label>
+            </value>
+            <value>
+                <fullName>Church In Good Standing</fullName>
+                <default>false</default>
+                <label>Church In Good Standing</label>
+            </value>
+            <value>
+                <fullName>Corporate Organization</fullName>
+                <default>false</default>
+                <label>Corporate Organization</label>
+            </value>
+            <value>
+                <fullName>Donation Platform</fullName>
+                <default>false</default>
+                <label>Donation Platform</label>
+            </value>
+            <value>
+                <fullName>Fiscally sponsored</fullName>
+                <default>false</default>
+                <label>Fiscally sponsored</label>
+            </value>
+            <value>
+                <fullName>Government Entity</fullName>
+                <default>false</default>
+                <label>Government Entity</label>
+            </value>
+            <value>
+                <fullName>Loyalty Vendor</fullName>
+                <default>false</default>
+                <label>Loyalty Vendor</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Private/Family Foundation</fullName>
+                <default>false</default>
+                <label>Private/Family Foundation</label>
+            </value>
+            <value>
+                <fullName>Public School/Local Government</fullName>
+                <default>false</default>
+                <label>Public School/Local Government</label>
+            </value>
+            <value>
+                <fullName>No Legal Status</fullName>
+                <default>false</default>
+                <label>No Legal Status</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_A_Representation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Community representation is encouraged through strategic collaborations.</description>
+    <inlineHelpText>Community representation is encouraged through strategic collaborations.</inlineHelpText>
+    <label>Su-A Representation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

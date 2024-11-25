@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>501(c)(3)</fullName>
+        <default>false</default>
+        <label>501(c)(3)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Church</fullName>
+        <default>false</default>
+        <label>Church</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Corporate Organization</fullName>
+        <default>false</default>
+        <label>Corporate Organization</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Donor Advised Fund</fullName>
+        <default>false</default>
+        <label>Donor Advised Fund</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Donation Platform</fullName>
+        <default>false</default>
+        <label>Donation Platform</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fiscally sponsored</fullName>
+        <default>false</default>
+        <label>Fiscally sponsored</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loyalty Vendor</fullName>
+        <default>false</default>
+        <label>Loyalty Vendor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other (Please Specify)</fullName>
+        <default>false</default>
+        <label>Other (Please Specify)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private/Family Foundation</fullName>
+        <default>false</default>
+        <label>Private/Family Foundation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public School/Local Government</fullName>
+        <default>false</default>
+        <label>Public School/Local Government</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nonprofit</fullName>
+        <default>false</default>
+        <label>Nonprofit</label>
+    </standardValue>
+</StandardValueSet>

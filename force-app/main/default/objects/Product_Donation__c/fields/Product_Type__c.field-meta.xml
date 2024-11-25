@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <label>Product Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diapers</fullName>
+                <default>false</default>
+                <label>Diapers</label>
+            </value>
+            <value>
+                <fullName>Pads &amp; Liners</fullName>
+                <default>false</default>
+                <label>Pads &amp; Liners</label>
+            </value>
+            <value>
+                <fullName>Wipes</fullName>
+                <default>false</default>
+                <label>Wipes</label>
+            </value>
+            <value>
+                <fullName>Books</fullName>
+                <default>false</default>
+                <label>Books</label>
+            </value>
+            <value>
+                <fullName>Adult Briefs</fullName>
+                <default>false</default>
+                <label>Adult Briefs</label>
+            </value>
+            <value>
+                <fullName>Adult Inc Pads</fullName>
+                <default>false</default>
+                <label>Adult Inc Pads</label>
+            </value>
+            <value>
+                <fullName>Hand Sanitizer</fullName>
+                <default>false</default>
+                <label>Hand Sanitizer</label>
+            </value>
+            <value>
+                <fullName>Period_underwear</fullName>
+                <default>false</default>
+                <label>Period underwear</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

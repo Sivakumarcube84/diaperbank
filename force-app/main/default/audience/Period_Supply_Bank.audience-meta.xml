@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Period Supply Bank Only</audienceName>
+    <container>Member Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.APS_Member_Type__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Allied Member</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.NDBN_Member_Type__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>APS only</fieldValue>
+            </criterionValue>
+            <operator>Includes</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>22e30dd4-a797-458d-81e2-b7c53012d1f4$#$26b51ccf-7de9-4ff6-8be7-6d554b5483f6</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Programs_and_Services_CMS_Collection_1_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>1bf9f421-6c50-46bc-a0f8-ff8b230f1cf4$#$deddcd1b-12b2-45ce-bd4a-33562b254be5</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Events_1_CMS_Collection_1_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

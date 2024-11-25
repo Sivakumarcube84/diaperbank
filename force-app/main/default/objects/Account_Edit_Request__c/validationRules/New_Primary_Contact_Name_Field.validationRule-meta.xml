@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Primary_Contact_Name_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR ( 
+    AND(/* When Firstname but not Lastname and email*/
+        ISBLANK( New_Primary_Contact_Email__c),
+        NOT(ISBLANK(New_Primary_Contact__c)),
+        ISBLANK( New_Primary_Contact_Last_Name__c)
+        ),
+    AND(/* When Lastname but not Firstname and email*/
+        ISBLANK(New_Primary_Contact_Email__c),
+        NOT(ISBLANK( New_Primary_Contact_Last_Name__c)),
+        ISBLANK(New_Primary_Contact__c)
+    ),
+    AND(/* When Lastname and email but not Firstname*/
+        NOT(ISBLANK( New_Primary_Contact_Last_Name__c)),
+        ISBLANK(New_Primary_Contact__c),
+        NOT(ISBLANK( New_Primary_Contact_Email__c))
+    ),
+    AND(/* When Email and first name but not last name*/
+        ISBLANK( New_Primary_Contact_Last_Name__c), 
+        NOT(ISBLANK(New_Primary_Contact__c)),
+        NOT(ISBLANK( New_Primary_Contact_Email__c))
+    ),
+        AND(/* When firstname and lastname but not email*/
+        ISBLANK( New_Primary_Contact_Email__c), 
+        NOT(ISBLANK(New_Primary_Contact__c)),
+        NOT(ISBLANK( New_Primary_Contact_Last_Name__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>New Primary Contact Email,  New Primary Contact First Name, and New Primary Contact Last Name fields must be populated</errorMessage>
+</ValidationRule>

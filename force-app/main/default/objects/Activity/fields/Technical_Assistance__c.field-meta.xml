@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_Assistance__c</fullName>
+    <label>Technical Assistance</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>IsVisibleInSelfService</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>diaper need awareness/diaper drives</fullName>
+                <default>false</default>
+                <label>diaper need awareness/diaper drives</label>
+            </value>
+            <value>
+                <fullName>fundraising</fullName>
+                <default>false</default>
+                <label>fundraising</label>
+            </value>
+            <value>
+                <fullName>organizational structure /board support</fullName>
+                <default>false</default>
+                <label>organizational structure /board support</label>
+            </value>
+            <value>
+                <fullName>starting a diaper bank</fullName>
+                <default>false</default>
+                <label>starting a diaper bank</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>unchecked</controllingFieldValue>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>diaper need awareness/diaper drives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>unchecked</controllingFieldValue>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>fundraising</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>unchecked</controllingFieldValue>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>organizational structure /board support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>unchecked</controllingFieldValue>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>starting a diaper bank</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

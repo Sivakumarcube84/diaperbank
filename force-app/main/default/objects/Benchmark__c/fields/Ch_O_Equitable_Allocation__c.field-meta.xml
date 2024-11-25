@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_O_Equitable_Allocation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Manage equitable allocation. Data is shared across multiple networks to shift services and re-allocate of diapers via partner agencies in order to serve the region in a more equitable manner.</description>
+    <inlineHelpText>Manage equitable allocation. Data is shared across multiple networks to shift services and re-allocate of diapers via partner agencies in order to serve the region in a more equitable manner.</inlineHelpText>
+    <label>Ch-O Equitable Allocation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

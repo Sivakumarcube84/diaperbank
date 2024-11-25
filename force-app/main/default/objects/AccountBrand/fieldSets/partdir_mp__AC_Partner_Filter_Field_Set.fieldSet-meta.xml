@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>partdir_mp__AC_Partner_Filter_Field_Set</fullName>
+    <availableFields>
+        <field>partdir_mp__Industry__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>for filtering on community component</description>
+    <displayedFields>
+        <field>partdir_mp__Level__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>AC Partner Filter Field Set</label>
+</FieldSet>

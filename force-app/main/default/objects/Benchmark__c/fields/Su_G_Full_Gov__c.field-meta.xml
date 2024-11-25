@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_G_Full_Gov__c</fullName>
+    <description>Formula check tally of board criteria and size</description>
+    <formula>(Board_benchmark_tally__c  +  Board_6_or_more_members__c ) = 7</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>formula checks the sum of board benchmark tally and board has 6 or more members</inlineHelpText>
+    <label>Su-G Full Gov</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Founder_Compensated__c</columns>
+    <columns>Year_Reporting__c</columns>
+    <columns>Period_products_distributed__c</columns>
+    <columns>Annual_Distribution_AnSv__c</columns>
+    <columns>Monthly_Distrib_AnSv__c</columns>
+    <columns>Diapers_Per_Child_Month_AnSv__c</columns>
+    <columns>Month_Children_Served_AnSv__c</columns>
+    <columns>Diapers_Donated_AnSv__c</columns>
+    <columns>Diapers_Purchased_AnSv__c</columns>
+    <columns>Annual_Diaper_Expense_AnSv__c</columns>
+    <columns>Form_URL__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>notEqual</operation>
+        <value>A11 DIAPER BANK</value>
+    </filters>
+    <filters>
+        <field>Period_products_distributed__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>All</label>
+</ListView>

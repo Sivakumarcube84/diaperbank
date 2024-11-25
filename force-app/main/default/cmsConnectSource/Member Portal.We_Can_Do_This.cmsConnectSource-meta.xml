@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMSConnectSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectionType>Public</connectionType>
+    <developerName>We_Can_Do_This</developerName>
+    <languageEnabled>N</languageEnabled>
+    <masterLabel>National Diaper Bank Network</masterLabel>
+    <personalizationEnabled>N</personalizationEnabled>
+    <sortOrder>1</sortOrder>
+    <status>INACTIVE</status>
+    <type>WordPress</type>
+    <websiteUrl>https://nationaldiaperbanknetwork.org</websiteUrl>
+</CMSConnectSource>

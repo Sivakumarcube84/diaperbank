@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diapers_Per_Child_Monthly__c</fullName>
+    <description>From Annual Survey: If member entered a range (ex 25-100), then data here is the average of that range. (This may not meet the criteria for the benchmark which must be 50 diapers per child per month for 90% of all routine distributions.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The average number of diapers distributed per child monthly. Note:  The criteria to meet this benchmark is 50 diapers per child per month for at least 90% of all routine distributions.</inlineHelpText>
+    <label>Diapers Per Child Monthly</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

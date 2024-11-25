@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qtr_Updates_Filed_2019__c</fullName>
+    <inlineHelpText>Count of how many quarterly updates have been submitted for the year.</inlineHelpText>
+    <label>Qtr Updates Filed 2019</label>
+    <summaryFilterItems>
+        <field>APS_Update__c.Quarter_Closing_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>12/31/2018</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>APS_Update__c.Quarter_Closing_Date__c</field>
+        <operation>lessThan</operation>
+        <value>1/1/2020</value>
+    </summaryFilterItems>
+    <summaryForeignKey>APS_Update__c.Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

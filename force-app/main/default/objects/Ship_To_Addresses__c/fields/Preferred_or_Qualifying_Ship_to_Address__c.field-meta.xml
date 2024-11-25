@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_or_Qualifying_Ship_to_Address__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Only 1 Address can be selected as the Preferred Address for a Member. All other Preferred Addresses must be de-selected.</inlineHelpText>
+    <label>Preferred or Qualifying Ship-to Address?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedContentType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Event details in a basic article format with rich text and image support.</description>
+    <developerName>Event</developerName>
+    <managedContentNodeTypes>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Title</nodeLabel>
+        <nodeName>title</nodeName>
+        <nodeType>NAMEFIELD</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Body</nodeLabel>
+        <nodeName>body</nodeName>
+        <nodeType>RTE</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Images aren’t required, but they help your post get attention.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Banner Image</nodeLabel>
+        <nodeName>bannerImage</nodeName>
+        <nodeType>IMG</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Excerpts display as summary or teaser text on compilation pages. Excerpts give your customers a quick sense of what your post is about so they can quickly decide whether or not to view the full article.</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Excerpt</nodeLabel>
+        <nodeName>excerpt</nodeName>
+        <nodeType>MTEXT</nodeType>
+        <placeholderText>Enter a summary or short description of your post...</placeholderText>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Date and Time</nodeLabel>
+        <nodeName>datetime</nodeName>
+        <nodeType>DATETIME</nodeType>
+        <placeholderText>Enter day, date, time, time zone</placeholderText>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Allows for filtering out past events</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Date</nodeLabel>
+        <nodeName>Date</nodeName>
+        <nodeType>DATE</nodeType>
+        <placeholderText>Enter date</placeholderText>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Use this OR embed FormAssembly form</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Register</nodeLabel>
+        <nodeName>register</nodeName>
+        <nodeType>URL</nodeType>
+        <placeholderText>Enter registraton link</placeholderText>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Add the recorded video after session has passed</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Video</nodeLabel>
+        <nodeName>Video</nodeName>
+        <nodeType>URL</nodeType>
+        <placeholderText>Enter URL</placeholderText>
+    </managedContentNodeTypes>
+    <masterLabel>Event</masterLabel>
+</ManagedContentType>

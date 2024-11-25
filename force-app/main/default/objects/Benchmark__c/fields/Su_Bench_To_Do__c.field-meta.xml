@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_Bench_To_Do__c</fullName>
+    <description>Total Sustaining Member Benchmarks (of 14) To Do</description>
+    <externalId>false</externalId>
+    <formula>Su_GOV_To_Do__c +
+Su_OPS_To_Do__c +
+Su_FUN_To_Do__c +
+Su_ADV_To_Do__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total Sustaining Member Benchmarks (of 14) To Do</inlineHelpText>
+    <label>SUSTAINING LEVEL BENCHMARS TO-DO (14)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

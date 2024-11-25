@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Cold</fullName>
+        <default>false</default>
+        <label>Cold</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualify/Research</fullName>
+        <default>false</default>
+        <label>Qualify/Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cultivate/Engage</fullName>
+        <default>false</default>
+        <label>Cultivate/Engage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicit - CYE</fullName>
+        <default>false</default>
+        <label>Solicit - CYE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicit</fullName>
+        <default>false</default>
+        <label>Solicit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic Development</fullName>
+        <default>false</default>
+        <label>Strategic Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation - Solicitation in Progress</fullName>
+        <default>false</default>
+        <label>Negotiation - Solicitation in Progress</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Stewardship - Grant Report</fullName>
+        <default>false</default>
+        <label>Stewardship - Grant Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Stewardship - Annual Gift Rec&apos;d</fullName>
+        <default>false</default>
+        <label>Stewardship - Annual Gift Rec&apos;d</label>
+    </standardValue>
+</StandardValueSet>

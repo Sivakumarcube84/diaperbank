@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Space_Type__c</fullName>
+    <label>Storage Space Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Commercial/business storage space</fullName>
+                <default>false</default>
+                <label>Commercial/business storage space</label>
+            </value>
+            <value>
+                <fullName>Consumer/container storage space</fullName>
+                <default>false</default>
+                <label>Consumer/container storage space</label>
+            </value>
+            <value>
+                <fullName>Residential space</fullName>
+                <default>false</default>
+                <label>Residential space</label>
+            </value>
+            <value>
+                <fullName>Warehouse with loading bay</fullName>
+                <default>false</default>
+                <label>Warehouse with loading bay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

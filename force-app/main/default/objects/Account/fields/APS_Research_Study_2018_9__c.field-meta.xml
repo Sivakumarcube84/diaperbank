@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Research_Study_2018_9__c</fullName>
+    <description>Identifies the current phase of participation in the APS Research Study Project. Members who signed up and began but were unable to continue should be marked as Stopped participating.</description>
+    <inlineHelpText>Identifies the current phase of participation in the APS Research Study Project. Members who signed up and began but were unable to continue should be marked as stopped participating.</inlineHelpText>
+    <label>APS Research Study 2018-9</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phase 1</fullName>
+                <default>false</default>
+                <label>Phase 1</label>
+            </value>
+            <value>
+                <fullName>Phase 2</fullName>
+                <default>false</default>
+                <label>Phase 2</label>
+            </value>
+            <value>
+                <fullName>Phase 3</fullName>
+                <default>false</default>
+                <label>Phase 3</label>
+            </value>
+            <value>
+                <fullName>Completed Year 1</fullName>
+                <default>false</default>
+                <label>Completed Year 1</label>
+            </value>
+            <value>
+                <fullName>Completed Year 2</fullName>
+                <default>false</default>
+                <label>Completed Year 2</label>
+            </value>
+            <value>
+                <fullName>Stopped Participating</fullName>
+                <default>false</default>
+                <label>Stopped Participating</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

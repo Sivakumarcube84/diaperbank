@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_G_Staff_Development__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Provide professional development opportunities and fair market pay rates for staff</description>
+    <inlineHelpText>Provide professional development opportunities and fair market pay rates for staff</inlineHelpText>
+    <label>Su-G Staff Development</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

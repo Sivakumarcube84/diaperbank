@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  (BillingState = &quot;CT&quot;) , &quot;1 New England&quot;,
+IF(  (BillingState = &quot;ME&quot;) , &quot;1 New England&quot;,
+IF(  (BillingState = &quot;MA&quot;) , &quot;1 New England&quot;,
+IF(  (BillingState = &quot;NH&quot;) , &quot;1 New England&quot;,
+IF(  (BillingState = &quot;RI&quot;) , &quot;1 New England&quot;,
+IF(  (BillingState = &quot;VT&quot;) , &quot;1 New England&quot;,
+IF(  (BillingState = &quot;NY&quot;) , &quot;2 Mid-Atlantic&quot;,
+IF(  (BillingState = &quot;NJ&quot;) , &quot;2 Mid-Atlantic&quot;,
+IF(  (BillingState = &quot;PA&quot;) , &quot;2 Mid-Atlantic&quot;,
+IF(  (BillingState = &quot;IL&quot;) , &quot;3 East North Central&quot;,
+IF(  (BillingState = &quot;IN&quot;) , &quot;3 East North Central&quot;,
+IF(  (BillingState = &quot;MI&quot;) , &quot;3 East North Central&quot;,
+IF(  (BillingState = &quot;OH&quot;) , &quot;3 East North Central&quot;,
+IF(  (BillingState = &quot;WI&quot;) , &quot;3 East North Central&quot;,
+IF(  (BillingState = &quot;IA&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;KS&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;MN&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;MO&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;NE&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;ND&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;SD&quot;) , &quot;4 West North Central&quot;,
+IF(  (BillingState = &quot;DE&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;FL&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;GA&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;MD&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;NC&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;SC&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;VA&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;WV&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;DC&quot;) , &quot;5 South-Atlantic&quot;,
+IF(  (BillingState = &quot;AL&quot;) , &quot;6 East South Central&quot;,
+IF(  (BillingState = &quot;KY&quot;) , &quot;6 East South Central&quot;,
+IF(  (BillingState = &quot;MS&quot;) , &quot;6 East South Central&quot;,
+IF(  (BillingState = &quot;TN&quot;) , &quot;6 East South Central&quot;,
+IF(  (BillingState = &quot;AR&quot;) , &quot;7 West South Central&quot;,
+IF(  (BillingState = &quot;LA&quot;) , &quot;7 West South Central&quot;,
+IF(  (BillingState = &quot;OK&quot;) , &quot;7 West South Central&quot;,
+IF(  (BillingState = &quot;TX&quot;) , &quot;7 West South Central&quot;,
+IF(  (BillingState = &quot;AZ&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;CO&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;ID&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;MT&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;NV&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;NM&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;UT&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;WY&quot;) , &quot;8 Mountain&quot;,
+IF(  (BillingState = &quot;AK&quot;) , &quot;9 Pacific&quot;,
+IF(  (BillingState = &quot;CA&quot;) , &quot;9 Pacific&quot;,
+IF(  (BillingState = &quot;HI&quot;) , &quot;9 Pacific&quot;,
+IF(  (BillingState = &quot;OR&quot;) , &quot;9 Pacific&quot;,
+IF(  (BillingState = &quot;WA&quot;) , &quot;9 Pacific&quot;,
+IF(  (BillingState = &quot;PR&quot;) , &quot;Puerto Rico&quot;,
+
+&quot;&quot;
+)))))
+))))
+)))))
+))))))))
+))))))))
+))))
+))))
+))))))))
+)))))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>U.S. Census Division, based on billing state</inlineHelpText>
+    <label>Division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

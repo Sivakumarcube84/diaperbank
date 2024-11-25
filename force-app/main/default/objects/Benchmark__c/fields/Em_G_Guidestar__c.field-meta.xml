@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_G_Guidestar__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Organization has a Guidestar profile with appropriate tax forms (990 forms).</description>
+    <inlineHelpText>Organization has a Guidestar profile with appropriate tax forms (990 forms).</inlineHelpText>
+    <label>Em-G Guidestar</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

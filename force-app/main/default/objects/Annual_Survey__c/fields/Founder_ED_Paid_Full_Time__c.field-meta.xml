@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Founder_ED_Paid_Full_Time__c</fullName>
+    <label>Founder ED Paid Full Time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes fair compensation for FTE</fullName>
+                <default>false</default>
+                <label>Yes fair compensation for FTE</label>
+            </value>
+            <value>
+                <fullName>Yes but below market comp for FTE</fullName>
+                <default>false</default>
+                <label>Yes but below market comp for FTE</label>
+            </value>
+            <value>
+                <fullName>No ED paid for part time</fullName>
+                <default>false</default>
+                <label>No ED paid for part time</label>
+            </value>
+            <value>
+                <fullName>No compensation for ED</fullName>
+                <default>false</default>
+                <label>No compensation for ED</label>
+            </value>
+            <value>
+                <fullName>Other (see survey)</fullName>
+                <default>false</default>
+                <label>Other (see survey)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

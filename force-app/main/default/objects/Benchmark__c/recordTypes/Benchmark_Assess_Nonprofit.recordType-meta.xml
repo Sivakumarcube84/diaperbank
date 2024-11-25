@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Benchmark_Assess_Nonprofit</fullName>
+    <active>true</active>
+    <label>Benchmark Assess Nonprofit</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>In review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member Input</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Plan created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Multi_racial_Multi_ethnic__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identify as two or more races or ethnicities</description>
+    <inlineHelpText>This contact has self-identified as noted.</inlineHelpText>
+    <label>Multi-racial/Multi-ethnic</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_O_Inventory_System__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Basic inventory system is operational to account for receipt and distribution of diapers and other items.</description>
+    <inlineHelpText>Basic inventory system is operational to account for receipt and distribution of diapers and other items.</inlineHelpText>
+    <label>Ex-O Inventory System</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

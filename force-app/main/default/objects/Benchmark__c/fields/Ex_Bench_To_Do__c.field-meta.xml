@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_Bench_To_Do__c</fullName>
+    <description>Total Number of Certified-Level Benchmarks (of 18) Not Yet Demonstrated</description>
+    <externalId>false</externalId>
+    <formula>Ex_GOV_To_Do__c +
+Ex_OPS_To_Do__c +
+Ex_FUN_To_Do__c +
+Ex_ADV_To_Do__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total Number of Certified-Level Benchmarks (of 18) Not Yet Demonstrated</inlineHelpText>
+    <label>CERTIFIED LEVEL BENCHMARKS TO DO (18)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

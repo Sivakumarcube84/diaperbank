@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fundraising_Methods_AnSv__c</fullName>
+    <label>Fundraising Methods AnSv</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grants</fullName>
+                <default>false</default>
+                <label>Grants</label>
+            </value>
+            <value>
+                <fullName>Individual Donors</fullName>
+                <default>false</default>
+                <label>Individual Donors</label>
+            </value>
+            <value>
+                <fullName>Fundraising Events</fullName>
+                <default>false</default>
+                <label>Fundraising Events</label>
+            </value>
+            <value>
+                <fullName>Corporate Donations</fullName>
+                <default>false</default>
+                <label>Corporate Donations</label>
+            </value>
+            <value>
+                <fullName>Government Funding</fullName>
+                <default>false</default>
+                <label>Government Funding</label>
+            </value>
+            <value>
+                <fullName>Do not raise money</fullName>
+                <default>false</default>
+                <label>Do not raise money</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

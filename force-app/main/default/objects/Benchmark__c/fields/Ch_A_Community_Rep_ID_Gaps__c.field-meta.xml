@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_A_Community_Rep_ID_Gaps__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Actively meet with community representatives to identify gaps in services. (Communities have come to expect diaper need assistance and are guided through strategic collaboration.)</description>
+    <inlineHelpText>Actively meet with community representatives to identify gaps in services. (Communities have come to expect diaper need assistance and are guided through strategic collaboration.)</inlineHelpText>
+    <label>Ch-A Community Rep ID Gaps</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

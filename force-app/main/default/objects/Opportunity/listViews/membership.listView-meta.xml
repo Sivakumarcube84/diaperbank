@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>membership</fullName>
+    <columns>X18_Character_Opp_ID__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Invoice_Number__c</columns>
+    <columns>AVSFQB__Quickbooks_Id__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npsp__Primary_Contact__c</columns>
+    <columns>npe01__Member_Level__c</columns>
+    <columns>Invoice_Member__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Membership</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>A11,A12,Addams</value>
+    </filters>
+    <label>All Memberships</label>
+</ListView>

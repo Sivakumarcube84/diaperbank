@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_G_Succession__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Written executive succession plan to ensure that programs remain active despite changes in leadership.</description>
+    <inlineHelpText>Written executive succession plan to ensure that programs remain active despite changes in leadership.</inlineHelpText>
+    <label>Ch-G Succession</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

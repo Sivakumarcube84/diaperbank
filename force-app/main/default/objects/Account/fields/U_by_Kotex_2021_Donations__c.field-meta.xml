@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>U_by_Kotex_2021_Donations__c</fullName>
+    <description>Sum of UbK product donations for the year</description>
+    <inlineHelpText>Sum of UbK product donations for the year</inlineHelpText>
+    <label>U by Kotex 2021 Donation</label>
+    <summarizedField>Product_Donation__c.Quantity__c</summarizedField>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Delivery_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2021</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Delivery_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>12/31/2021</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Product_Type__c</field>
+        <operation>contains</operation>
+        <value>Pads &amp; Liners</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Product_Donation__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

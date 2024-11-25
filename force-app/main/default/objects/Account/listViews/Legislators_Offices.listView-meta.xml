@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legislators_Offices</fullName>
+    <booleanFilter>(1 OR 2) and 3</booleanFilter>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.URL</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Government</value>
+    </filters>
+    <filters>
+        <field>NDBN_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>Policy-Advocacy</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Non_Basic_Need_Bank</value>
+    </filters>
+    <label>Government related accounts</label>
+    <sharedTo>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</ListView>

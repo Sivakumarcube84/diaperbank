@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>diaper_banks_in_america_2012__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>attending confernece</description>
+    <label>diaper banks in america 2012</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

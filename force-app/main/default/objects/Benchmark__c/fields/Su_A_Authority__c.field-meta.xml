@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_A_Authority__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>The organization is recognized as a regional authority on diaper need in the context of local poverty issues.</description>
+    <inlineHelpText>The organization is recognized as a regional authority on diaper need in the context of local poverty issues.</inlineHelpText>
+    <label>Su-A Authority</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_1st_Period_Supply_Distribution__c</fullName>
+    <description>First period supply distribution date.</description>
+    <inlineHelpText>First period supply distribution date.</inlineHelpText>
+    <label>APS 1st Period Supply Distribution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

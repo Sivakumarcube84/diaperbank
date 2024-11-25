@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Account_Name_Change</fullName>
+    <active>true</active>
+    <description>7/5/22 Arkus - Community users are not allowed to edit the account name field. This is a workaround for a limitation of core architecture. See also https://sforce.co/3AuwQ59</description>
+    <errorConditionFormula>AND( 
+ ISCHANGED( Name ), 
+ $Profile.Name = &apos;NDBN Portal Member&apos;
+)</errorConditionFormula>
+    <errorMessage>Account Name changes are not allowed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_F_Fundraising_Plan__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A basic fundraising plan sets goals and activities.</description>
+    <inlineHelpText>A basic fundraising plan sets goals and activities.</inlineHelpText>
+    <label>Ex-F Fundraising Plan</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

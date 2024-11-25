@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gov_related_contacts</fullName>
+    <booleanFilter>(1 OR 2 OR 3)</booleanFilter>
+    <columns>CONTACT.FIRST_NAME</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Contact_Type__c</columns>
+    <columns>Account.NDBN_Member_Type__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>CONTACT.ADDRESS2_STATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account.NDBN_Member_Type__c</field>
+        <operation>includes</operation>
+        <value>Legislative Office,Policy-Advocacy</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Government</value>
+    </filters>
+    <filters>
+        <field>Contact_Type__c</field>
+        <operation>includes</operation>
+        <value>Community advocate/policy advocate,Legislative Staff,Legislator</value>
+    </filters>
+    <label>Gov related contacts</label>
+    <sharedTo>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</ListView>

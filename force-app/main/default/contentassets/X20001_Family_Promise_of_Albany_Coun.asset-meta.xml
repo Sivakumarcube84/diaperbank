@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>X20001_Family_Promise_of_Albany_Coun</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>20001 Family Promise of Albany County.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

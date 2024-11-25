@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloth_Diapers_Provided__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to indicate if members provide cloth diapers</description>
+    <inlineHelpText>Families are regularly offered access to cloth diapers as a part of of the diaper distribution program</inlineHelpText>
+    <label>Cloth Diapers Provided</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

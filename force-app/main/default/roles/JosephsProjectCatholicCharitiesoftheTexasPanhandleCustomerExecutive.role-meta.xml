@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Joseph&apos;s Project -Catholic Charities of the Texas Panhandle Customer Executive</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Joseph&apos;s Project -Catholic Charities of the Texas Panhandle Customer Executive</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>ProgramsStaff</parentRole>
+</Role>

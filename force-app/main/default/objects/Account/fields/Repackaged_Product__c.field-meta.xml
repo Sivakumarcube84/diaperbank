@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repackaged_Product__c</fullName>
+    <description>Describe how you repackage similar products to standardize inventory and distribution.
+Example: Pads - 30, Tampons - 20, Liners - 30.</description>
+    <inlineHelpText>Describe how you repackage similar products to standardize inventory and distribution.
+Example: Pads - 30, Tampons - 20, Liners - 30.</inlineHelpText>
+    <label>Repackaged Product-unmixed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

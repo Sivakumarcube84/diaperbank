@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_O_Data_Systems__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Data system allows for timely sharing of information in order to improve service and allocate resources equitably.</description>
+    <inlineHelpText>Data system allows for timely sharing of information in order to improve service and allocate resources equitably.</inlineHelpText>
+    <label>Su-O Data Systems</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

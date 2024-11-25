@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_identifies_as_Black_AA__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Executive Director&apos;s race and ethnicity was identified as Black or African American</inlineHelpText>
+    <label>ED identifies as Black/AA</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

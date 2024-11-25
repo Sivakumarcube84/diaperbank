@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_O_Nonres_Storage__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Non-residential storage site is owned, leased or regularly accessible to key staff.</description>
+    <inlineHelpText>Non-residential storage site is owned, leased or regularly accessible to key staff.</inlineHelpText>
+    <label>Em-O Nonres Storage</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

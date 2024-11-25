@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDBN_Member_Type__c</fullName>
+    <description>The main categories of membership in NDBN including APS only</description>
+    <inlineHelpText>Membership type set by NDBN</inlineHelpText>
+    <label>NDBN Member Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applicant</fullName>
+                <default>false</default>
+                <label>Applicant</label>
+            </value>
+            <value>
+                <fullName>APS only</fullName>
+                <default>false</default>
+                <label>APS only</label>
+            </value>
+            <value>
+                <fullName>Certified</fullName>
+                <default>false</default>
+                <label>Certified Member</label>
+            </value>
+            <value>
+                <fullName>Change Leader</fullName>
+                <default>false</default>
+                <label>Change Leader</label>
+            </value>
+            <value>
+                <fullName>Established</fullName>
+                <default>false</default>
+                <label>Established Member</label>
+            </value>
+            <value>
+                <fullName>Outside Network</fullName>
+                <default>false</default>
+                <label>Outside Network</label>
+            </value>
+            <value>
+                <fullName>Left Network</fullName>
+                <default>false</default>
+                <label>Left Network</label>
+            </value>
+            <value>
+                <fullName>Sustaining</fullName>
+                <default>false</default>
+                <label>Sustaining Member</label>
+            </value>
+            <value>
+                <fullName>Other-NonMember</fullName>
+                <default>false</default>
+                <label>Other-NonMember</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

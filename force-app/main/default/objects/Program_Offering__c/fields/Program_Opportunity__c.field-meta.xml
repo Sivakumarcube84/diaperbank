@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Opportunity__c</fullName>
+    <inlineHelpText>The program opportunity is a section of a general program. (For example, the Funds for Change Program opportunities are micro grants, strategic initiative grants, or program demos)</inlineHelpText>
+    <label>Program Opportunity</label>
+    <referenceTo>Program_Opportunity__c</referenceTo>
+    <relationshipLabel>Program Offerings</relationshipLabel>
+    <relationshipName>Program_Offerings</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

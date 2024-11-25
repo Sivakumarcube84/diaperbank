@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_O_Set_Process_to_Enroll__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Method has been established for collecting and reporting data from recipient individuals and agencies. Direct service providers have application or intake form other than sign-in sheet. Partner Agencies have application/agreement.</description>
+    <inlineHelpText>Method has been established for collecting and reporting data from recipient individuals and agencies. Direct service providers have application or intake form other than sign-in sheet. Partner Agencies have application/agreement.</inlineHelpText>
+    <label>Ex-O Set Process to Enroll</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

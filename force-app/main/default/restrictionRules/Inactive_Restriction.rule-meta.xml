@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RestrictionRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>cannot mark record inactive if Primary address</description>
+    <enforcementType>Restrict</enforcementType>
+    <masterLabel>Inactive Restriction</masterLabel>
+    <recordFilter>Inactive__c=true</recordFilter>
+    <targetEntity>Ship_To_Addresses__c</targetEntity>
+    <userCriteria>CASE($User.UserType, &apos;Standard&apos;, 1, 0)=1</userCriteria>
+    <version>1</version>
+</RestrictionRule>

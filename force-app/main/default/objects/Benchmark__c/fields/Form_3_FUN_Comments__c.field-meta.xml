@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_3_FUN_Comments__c</fullName>
+    <description>Comments from most recent Form 3 FUN (Fundraising &amp; Finance Benchmarks)</description>
+    <inlineHelpText>Comments from most recent Form 3 FUN (Fundraising &amp; Finance Benchmarks)</inlineHelpText>
+    <label>Form 3 FUN Comments</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

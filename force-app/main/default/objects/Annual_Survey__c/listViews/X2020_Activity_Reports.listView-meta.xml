@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2020_Activity_Reports</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>Submit_Date_AnSv__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Annual_Distribution_AnSv__c</columns>
+    <columns>Period_products_distributed__c</columns>
+    <columns>Most_Proud_of_Last_Year__c</columns>
+    <columns>Goal_for_Upcoming_Year__c</columns>
+    <columns>Month_Children_Served_AnSv__c</columns>
+    <columns>Individuals_Monthly__c</columns>
+    <columns>Agencies_Served_AnSv__c</columns>
+    <columns>Partner_Agencies_Total_Basic_Needs_Bank__c</columns>
+    <columns>Form_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Year_Reporting__c</field>
+        <operation>equals</operation>
+        <value>2023</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>notContain</operation>
+        <value>A11,A12,Addams</value>
+    </filters>
+    <label>2023 Annual Surveys</label>
+</ListView>

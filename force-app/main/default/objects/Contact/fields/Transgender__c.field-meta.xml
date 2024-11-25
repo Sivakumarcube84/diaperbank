@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transgender__c</fullName>
+    <inlineHelpText>This contact has self-identified as noted.</inlineHelpText>
+    <label>Transgender</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transgender</fullName>
+                <default>false</default>
+                <label>Transgender</label>
+            </value>
+            <value>
+                <fullName>Not transgender (cisgender)</fullName>
+                <default>false</default>
+                <label>Not transgender (cisgender)</label>
+            </value>
+            <value>
+                <fullName>Decline to state</fullName>
+                <default>false</default>
+                <label>Decline to state</label>
+            </value>
+            <value>
+                <fullName>Different gender identity</fullName>
+                <default>false</default>
+                <label>Different gender identity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

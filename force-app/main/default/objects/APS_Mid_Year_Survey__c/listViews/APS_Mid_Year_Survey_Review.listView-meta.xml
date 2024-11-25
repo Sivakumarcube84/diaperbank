@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Mid_Year_Survey_Review</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Avg_Number_People_Served_Monthly__c</columns>
+    <columns>Total_Period_Productsd_Distributed__c</columns>
+    <columns>Total_Number_of_Pads_Distributed_between__c</columns>
+    <columns>Total_Number_of_Tampons_Distributed__c</columns>
+    <columns>Total_Number_of_Liners_Distributed__c</columns>
+    <columns>Number_of_Partner_Agencies_Served__c</columns>
+    <columns>Six_Month_Outlook__c</columns>
+    <columns>Survey_submit_Date__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>Review_Status__c</columns>
+    <columns>Review_Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Survey_submit_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>6/30/2023</value>
+    </filters>
+    <label>APS Mid Year Survey Review</label>
+</ListView>

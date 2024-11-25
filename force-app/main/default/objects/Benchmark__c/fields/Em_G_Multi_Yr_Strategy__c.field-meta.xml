@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_G_Multi_Yr_Strategy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Multi-year strategic planning has begun (3-5 years).</description>
+    <inlineHelpText>Multi-year strategic planning has begun (3-5 years).</inlineHelpText>
+    <label>Em-G Multi Yr Strategy</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

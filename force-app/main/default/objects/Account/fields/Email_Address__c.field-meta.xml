@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Address__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is no longer updated. Please replace it with the field labeled &quot;Primary Contact Email&quot;</inlineHelpText>
+    <label>xxEmail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

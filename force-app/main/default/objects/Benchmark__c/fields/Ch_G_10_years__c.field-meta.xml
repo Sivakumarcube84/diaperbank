@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_G_10_years__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Diaper program has been active for 10 years.</description>
+    <inlineHelpText>Diaper program has been active for 10 years.</inlineHelpText>
+    <label>Ch-G 10 years</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

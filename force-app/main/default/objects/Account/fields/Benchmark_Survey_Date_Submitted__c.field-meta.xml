@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Benchmark_Survey_Date_Submitted__c</fullName>
+    <description>Date of the last benchmark survey</description>
+    <inlineHelpText>Automatically sent over from FormAssembly on survey submission date.</inlineHelpText>
+    <label>Benchmark Survey Date Submitted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

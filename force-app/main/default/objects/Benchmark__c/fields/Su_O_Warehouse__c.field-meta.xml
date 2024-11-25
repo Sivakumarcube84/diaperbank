@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_O_Warehouse__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Warehouse storage is owned or leased and can receive and store donations for the regional network as well as coordinate trading or reallocating resources.</description>
+    <inlineHelpText>Warehouse storage is owned or leased and can receive and store donations for the regional network as well as coordinate trading or reallocating resources.</inlineHelpText>
+    <label>Su-O Warehouse</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

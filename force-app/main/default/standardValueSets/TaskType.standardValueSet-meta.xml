@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>true</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Board</fullName>
+        <default>false</default>
+        <label>Board</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Administration</fullName>
+        <default>false</default>
+        <label>General Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fund Raising</fullName>
+        <default>false</default>
+        <label>Fund Raising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Awareness Raising</fullName>
+        <default>false</default>
+        <label>Awareness Raising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TA-Professional Advising</fullName>
+        <default>false</default>
+        <label>TA-Professional Advising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TA-Program Related</fullName>
+        <default>false</default>
+        <label>TA-Program Related</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Membership Support</fullName>
+        <default>false</default>
+        <label>Membership Support</label>
+    </standardValue>
+</StandardValueSet>

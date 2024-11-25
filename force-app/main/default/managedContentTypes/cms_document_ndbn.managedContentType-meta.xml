@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedContentType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Add files for users to download.</description>
+    <developerName>cms_document_ndbn</developerName>
+    <managedContentNodeTypes>
+        <helpText>Enter the file name.</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Title</nodeLabel>
+        <nodeName>title</nodeName>
+        <nodeType>NAMEFIELD</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Enter a brief description of the document.</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Alt Text</nodeLabel>
+        <nodeName>altText</nodeName>
+        <nodeType>MTEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Image</nodeLabel>
+        <nodeName>image</nodeName>
+        <nodeType>IMG</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Brief description or summary for preview</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Description</nodeLabel>
+        <nodeName>description</nodeName>
+        <nodeType>MTEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>File type such as PDF, XLS, DOC, JPG, PNG, etc.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Document Type</nodeLabel>
+        <nodeName>document_Type</nodeName>
+        <nodeType>TEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Add the relative URL for the file here and map to button link.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Download URL</nodeLabel>
+        <nodeName>download_URL</nodeName>
+        <nodeType>URL</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Flag</nodeLabel>
+        <nodeName>flag</nodeName>
+        <nodeType>TEXT</nodeType>
+    </managedContentNodeTypes>
+    <masterLabel>Document NDBN</masterLabel>
+</ManagedContentType>

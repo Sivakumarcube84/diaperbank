@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Governing_Organization_Exact_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The name of the 501(c)(3) organization that houses the member programs or the umbrella 501(c)(3) organization or the Fiscal Sponsor</inlineHelpText>
+    <label>Governing Organization Exact Name</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

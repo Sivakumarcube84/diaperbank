@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFC_Applications_Submitted__c</fullName>
+    <inlineHelpText>The number of times this organization has applied for a Funds for Change Grant. (Members may only apply once per grant cycle.)</inlineHelpText>
+    <label>FFC Applications Submitted</label>
+    <summaryForeignKey>FFC_Participation__c.Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

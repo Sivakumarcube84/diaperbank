@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Members_NDBN_APS</fullName>
+    <booleanFilter>1 AND 2 and 3</booleanFilter>
+    <columns>Overall_Member_Type__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>APS_Member_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npe01__One2OneContact__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Total_Diaper_Distribution_Last_Year__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>Primary_Contact_Email__c</columns>
+    <columns>Dues_Expiration_NDBN_only__c</columns>
+    <columns>NDBN_Partner_Agencies_Served_this_Year__c</columns>
+    <columns>EIS_Note__c</columns>
+    <columns>npe01__FirstDonationDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Diaper_Bank</value>
+    </filters>
+    <filters>
+        <field>NDBN_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>Certified,Certified Member,Established,Established Member,Sustaining,Change Leader,APS only</value>
+    </filters>
+    <filters>
+        <field>Overall_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>Both Member Type</value>
+    </filters>
+    <label>Members - NDBN &amp; APS</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

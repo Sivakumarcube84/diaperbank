@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Survey_2019__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <formula>FA_Date_Submitted__c  &gt;  DATE(2019,12,31) &amp;&amp; 
+FA_Date_Submitted__c  &lt;  DATE(2020,12,31)</formula>
+    <inlineHelpText>A check indicates Annual Survey Date Submitted between 1/1/2020 and 12/31/2020.</inlineHelpText>
+    <label>Annual Survey 2019</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

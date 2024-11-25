@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EIS_Stage__c</fullName>
+    <label>EIS Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interested/MOU</fullName>
+                <default>false</default>
+                <label>Interested/MOU</label>
+            </value>
+            <value>
+                <fullName>MOU signed</fullName>
+                <default>false</default>
+                <label>MOU signed</label>
+            </value>
+            <value>
+                <fullName>Training done</fullName>
+                <default>false</default>
+                <label>Training done</label>
+            </value>
+            <value>
+                <fullName>Surveying</fullName>
+                <default>false</default>
+                <label>Surveying</label>
+            </value>
+            <value>
+                <fullName>Done Surveying</fullName>
+                <default>false</default>
+                <label>Done Surveying</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>No response</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No response</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

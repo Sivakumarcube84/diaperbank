@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type</fullName>
+    <description>Values are: 501(c)(3), Church In Good Standing, Corporate Organization, Donor Advised Fund, Donation Platform, Fiscally sponsored, Government , Loyalty Vendor, Other, Other (Please Specify), Private/Family Foundation, Public School/Local Government, Nonprofit</description>
+    <inlineHelpText>The basic needs program may be a 501(c)(3), fiscally sponsored, or part of a faith based organization exempted by the IRS</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

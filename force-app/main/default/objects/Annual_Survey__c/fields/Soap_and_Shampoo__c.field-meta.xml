@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Soap_and_Shampoo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Soap, shampoo, other body cleaning supplies</inlineHelpText>
+    <label>Soap and Shampoo</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

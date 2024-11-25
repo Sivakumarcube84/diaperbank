@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVSFQB__Generate_Object__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Request to generate Estimate, invoice or sales order</description>
+    <label>Generate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Invoice Updated</fullName>
+                <default>false</default>
+                <label>Invoice Updated</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Invoice Created</fullName>
+                <default>false</default>
+                <label>Invoice Created</label>
+            </value>
+            <value>
+                <fullName>Invoice Not Created</fullName>
+                <default>false</default>
+                <label>Invoice Not Created</label>
+            </value>
+            <value>
+                <fullName>SalesReceipt</fullName>
+                <default>false</default>
+                <label>SalesReceipt</label>
+            </value>
+            <value>
+                <fullName>SalesOrder</fullName>
+                <default>false</default>
+                <label>SalesOrder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

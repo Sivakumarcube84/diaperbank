@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Positive_Reviews__c</fullName>
+    <inlineHelpText>Number of reviews that indicated content might be usable.</inlineHelpText>
+    <label>Positive Reviews</label>
+    <summaryFilterItems>
+        <field>Usability_Review__c.Usable_content__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Usability_Review__c.Member_Results__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

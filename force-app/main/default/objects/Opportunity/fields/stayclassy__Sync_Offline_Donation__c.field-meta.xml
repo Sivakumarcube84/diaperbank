@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__Sync_Offline_Donation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When creating an offline donation, check this box to sync transaction with the Classy App</description>
+    <inlineHelpText>Check box to sync offline donation with the Classy APP.  
+REQUIRED FIELDS: 
+Opportunity Name, 
+Amount, 
+Close Date, 
+Stage, 
+Primary Campaign Source, 
+Payment Method, 
+Billing First Name and 
+Billing Last Name</inlineHelpText>
+    <label>Sync as Offline Donation</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

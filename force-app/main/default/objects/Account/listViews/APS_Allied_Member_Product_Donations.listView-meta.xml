@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Allied_Member_Product_Donations</fullName>
+    <booleanFilter>1 and 2 and 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>U_by_Kotex_2021_Donations__c</columns>
+    <columns>Qtr_Updates_Filed_2021__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>APS_Membership_Date__c</columns>
+    <columns>APS_Primary_Contact_Email__c</columns>
+    <columns>Member_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>APS_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>Allied Member</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Diaper_Bank</value>
+    </filters>
+    <filters>
+        <field>NDBN_Member_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Outside Network</value>
+    </filters>
+    <label>APS Allied Member Product Donations</label>
+</ListView>

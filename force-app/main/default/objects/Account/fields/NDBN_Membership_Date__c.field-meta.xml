@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDBN_Membership_Date__c</fullName>
+    <description>Date of official membership. When diaper banks submit signed agreement and 501(c)(3) letter of determination.</description>
+    <label>NDBN Membership Date</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

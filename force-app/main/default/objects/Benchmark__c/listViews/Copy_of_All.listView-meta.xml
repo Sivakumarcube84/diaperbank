@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_All</fullName>
+    <booleanFilter>1 and 2 and 3</booleanFilter>
+    <columns>Account__c</columns>
+    <columns>BAQ_Date_Submitted__c</columns>
+    <columns>NAME</columns>
+    <columns>Total_Benchmarks_To_Do__c</columns>
+    <columns>Ex_Bench_To_Do__c</columns>
+    <columns>Em_Bench_To_Do__c</columns>
+    <columns>Su_Bench_To_Do__c</columns>
+    <columns>Ch_Bench_To_Do__c</columns>
+    <columns>Status__c</columns>
+    <columns>Staff_Note__c</columns>
+    <columns>BAQ_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>BAQ_Date_Submitted__c</field>
+        <operation>greaterThan</operation>
+        <value>7/9/2024</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>notContain</operation>
+        <value>A11</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Benchmark__c.Benchmark_Assess_Nonprofit</value>
+    </filters>
+    <label>All in 2024 ReLaunch</label>
+    <sharedTo>
+        <group>Staff_List_Share</group>
+    </sharedTo>
+</ListView>

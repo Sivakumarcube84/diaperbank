@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <constants>
+        <name>con_BenchmarkAssessmentID</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>01I3o000002N6ue</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Nonprofit</description>
+        <name>con_BenchmarkNonprofitRecordTypeId</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>012Pj000000P1s9IAC</stringValue>
+        </value>
+    </constants>
+    <environments>Default</environments>
+    <interviewLabel>Benchmarks for Portal Change Leader {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Benchmarks for Portal Change Leader</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Benchmarks</name>
+        <label>Get Benchmarks</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>BenchmarksChangeOrgLeadDisplay</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>BAQ_Date_Submitted__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateValue>2015-12-31</dateValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Benchmark__c</object>
+        <sortField>BAQ_Date_Submitted__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Contact</name>
+        <label>Get Contact</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Benchmarks</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>Shows change leader benchmarks from the custom object Benchmark Assessment</description>
+        <name>BenchmarksChangeOrgLeadDisplay</name>
+        <label>BenchmarksChangeOrgLeadDisplay</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstLeadershipOrganization</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;LEADERSHIP &amp;amp; ORGANIZATION&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>TenYears</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Ch_G_10_years__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>StakeholdersInStrategic</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_G_Stakeholders_in_Strategic__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>Succession</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_G_Succession__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section2_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchChangeTenYears</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has operated a diaper program or period supply program for at least {!linkchgtenyears}.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeStakeholdersInStrategic</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has a set process to for {!linkchgstakeholdersinstrategic}, including community representation from the service area.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeSuccession</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has a written executive {!linkchgsuccession} to ensure that programs remain active despite changes in leadership.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstProgramsOperations</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;PROGRAMS &amp;amp; OPERATIONS&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section4</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section4_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>ExpandGeographic</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_O_Expand_Geographic__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>EvaluateOutcomes</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Ch_O_Evaluate_Outcomes__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>EquitableAllocation</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Ch_O_Equitable_Allocation__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section4_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchChangeExpandGeographic</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has demonstrated ability to {!linkchoexpandgeographic} while maintaining outcomes.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeEvaluateOutcomes</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has implemented a {!linkchoevaluateoutcomes} or improvement of targeted population-based outcomes.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeEquitableAllocation</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;{!linkchoequitableallocation}. Data is shared across multiple networks to shift services and re-allocate of diapers via partner agencies in order to serve the area in a more equitable manner.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section5</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section5_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstFundraisingFinance</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;FUNDRAISING &amp;amp; FINANCE&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section6</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section6_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>FundingThroughChange</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_F_Funding_through_Change__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>ResourcesAligned</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_F_Resources_Aligned__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>MultiYearFunding</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_F_Multiyear_Funding__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section6_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchChangeFundingThroughChange</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has a strategy for {!linkchffundingthroughchange} as part of succession planning.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeResourceAligned</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Is able to {!linkchfresourcealigned} in support of work to improve impacts and outcomes.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeMultiYearFunding</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has demonstrated ability to secure {!linkchfmultiyearfunding}.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section7</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section7_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>EstCommunicationsAdvocacy</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;COMMUNICATIONS &amp;amp; ADVOCACY&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BenchmarksChangeOrgLeadDisplay_Section8</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section8_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>CommRepIDGaps</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px;&quot;&gt;{!Get_Benchmarks.Ch_A_Community_Rep_ID_Gaps__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>InfluencePolicy</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(224, 0, 0);&quot;&gt;{!Get_Benchmarks.Ch_A_Influence_Policy__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>NDBNBrand</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(224, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;{!Get_Benchmarks.Ch_A_NDBN_Brand__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>2</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>BenchmarksChangeOrgLeadDisplay_Section8_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>BenchChangeCommRepIDGaps</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Actively meets with {!linkchacommrepidgaps}.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeInfluencePolicy</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Has demonstrated success engaging and {!linkchainfluencepolicy} to change governmental policies.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>BenchChangeNDBNBrand</name>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Includes language in reporting that &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-size: 14px;&quot;&gt;{!linkchandbnbrand}&lt;/span&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;, in compliance with membership terms regarding the use of the NDBN/APS brand, content, and member benefits.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>10</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Contact</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchacommrepidgaps</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq4#Ch_A_Community_Rep_ID_Gaps&quot; target=&quot;_top&quot;&gt;community representatives to identify gaps in distribution services&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchainfluencepolicy</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq4#Ch_A_Influence_Policy&quot; target=&quot;_top&quot;&gt;influencing decision makers&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchandbnbrand</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq4#Ch_A_NDBN_Brand&quot; target=&quot;_top&quot;&gt;links program outcomes and impact to NDBN/APS affiliation&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchffundingthroughchange</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Ch_F_Funding_through_Change&quot; target=&quot;_top&quot;&gt;funding stability through leadership changes&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchfmultiyearfunding</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Ch_F_Multiyear_Funding&quot; target=&quot;_top&quot;&gt;multiple years of sustainable funding&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchfresourcealigned</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq3#Ch_F_Resources_Aligned_&quot; target=&quot;_top&quot;&gt;align financial and community resources&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchgstakeholdersinstrategic</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq1#Ch_G_Stakeholders_in_Strategic&quot; target=&quot;_top&quot;&gt;stakeholder input in strategic planning&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchgsuccession</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq1#Ch_G_Succession&quot; target=&quot;_top&quot;&gt;succession plan&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchgtenyears</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq1#Ch_G_10_years&quot; target=&quot;_top&quot;&gt;ten years&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchoequitableallocation</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq2#Ch_P_Equitable_Allocation&quot; target=&quot;_top&quot;&gt;Manages equitable allocation&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchoevaluateoutcomes</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq2#Ch_P_Evaluate_Outcomes&quot; target=&quot;_top&quot;&gt;mechanism to measure economic impact&lt;/a&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>creates a hyperlink that opens in the same window</description>
+        <name>linkchoexpandgeographic</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;a href=&quot;https://ndbn.my.site.com/memberportal/s/baq2#Ch_P_Expand_Geographic&quot; target=&quot;_top&quot;&gt;expand geographic reach&lt;/a&gt;</text>
+    </textTemplates>
+</Flow>

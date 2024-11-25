@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__Multi_Currency</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>stayclassy__Currency_Code__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>stayclassy__sc_order_id__c</columns>
+    <columns>stayclassy__Charged_Currency_Code__c</columns>
+    <columns>stayclassy__Charged_Total_Gross_Amount__c</columns>
+    <columns>stayclassy__Raw_Currency_Code__c</columns>
+    <columns>stayclassy__Raw_Donation_Gross_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Multi-Currency</label>
+</ListView>

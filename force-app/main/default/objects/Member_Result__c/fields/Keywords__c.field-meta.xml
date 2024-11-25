@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Keywords__c</fullName>
+    <inlineHelpText>Select keywords that describe the focus or context of this member result.</inlineHelpText>
+    <label>Keywords</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+                <label>Advocacy</label>
+            </value>
+            <value>
+                <fullName>APS</fullName>
+                <default>false</default>
+                <label>APS</label>
+            </value>
+            <value>
+                <fullName>Board Development</fullName>
+                <default>false</default>
+                <label>Board Development</label>
+            </value>
+            <value>
+                <fullName>Business Relationships</fullName>
+                <default>false</default>
+                <label>Business Relationships</label>
+            </value>
+            <value>
+                <fullName>Capacity Building</fullName>
+                <default>false</default>
+                <label>Capacity Building</label>
+            </value>
+            <value>
+                <fullName>Community Engagement</fullName>
+                <default>false</default>
+                <label>Community Engagement</label>
+            </value>
+            <value>
+                <fullName>Diaper Drives</fullName>
+                <default>false</default>
+                <label>Diaper Drives</label>
+            </value>
+            <value>
+                <fullName>Families-babies-parents</fullName>
+                <default>false</default>
+                <label>Families-babies-parents</label>
+            </value>
+            <value>
+                <fullName>Fundraising/Events</fullName>
+                <default>false</default>
+                <label>Fundraising/Events</label>
+            </value>
+            <value>
+                <fullName>Huggies</fullName>
+                <default>false</default>
+                <label>Huggies</label>
+            </value>
+            <value>
+                <fullName>Leadership</fullName>
+                <default>false</default>
+                <label>Leadership</label>
+            </value>
+            <value>
+                <fullName>Marketing/PR/Website</fullName>
+                <default>false</default>
+                <label>Marketing/PR/Website</label>
+            </value>
+            <value>
+                <fullName>Partner Agencies</fullName>
+                <default>false</default>
+                <label>Partner Agencies</label>
+            </value>
+            <value>
+                <fullName>Professional Training</fullName>
+                <default>false</default>
+                <label>Professional Training</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Rural</fullName>
+                <default>false</default>
+                <label>Rural</label>
+            </value>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <label>Staff</label>
+            </value>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>U by Kotex</fullName>
+                <default>false</default>
+                <label>U by Kotex</label>
+            </value>
+            <value>
+                <fullName>Urban</fullName>
+                <default>false</default>
+                <label>Urban</label>
+            </value>
+            <value>
+                <fullName>Volunteers</fullName>
+                <default>false</default>
+                <label>Volunteers</label>
+            </value>
+            <value>
+                <fullName>Warehouse/storage</fullName>
+                <default>false</default>
+                <label>Warehouse/storage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

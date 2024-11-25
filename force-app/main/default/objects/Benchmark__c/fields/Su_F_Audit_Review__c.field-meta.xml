@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_F_Audit_Review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>An annual audit or review is conducted by an independent CPA firm</description>
+    <inlineHelpText>An annual audit or review is conducted by an independent CPA firm</inlineHelpText>
+    <label>Su-F Audit-Review</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

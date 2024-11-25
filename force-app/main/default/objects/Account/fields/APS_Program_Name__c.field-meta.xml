@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Program_Name__c</fullName>
+    <description>APS Program Name or Nickname</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specific name for period supply program if different than organization name</inlineHelpText>
+    <label>APS Program Name</label>
+    <length>155</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

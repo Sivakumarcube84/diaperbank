@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__Is_Gift_Aid_Eligible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>For donations to UK charitable entities, a donor can select to mark the donation as &quot;Gift Aide&quot; for the purposes of reducing the tax burden on the NPO.</description>
+    <inlineHelpText>For donations to UK charitable entities, a donor can select to mark the donation as &quot;Gift Aide&quot; for the purposes of reducing the tax burden on the NPO.</inlineHelpText>
+    <label>Is Gift Aid Eligible</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

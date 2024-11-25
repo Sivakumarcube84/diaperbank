@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>New Case Submitted  - Member Portal</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Member Portal Update Requests</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <senderEmail>info@diaperbanknetwork.org</senderEmail>
+            <senderName>Susan Van Ness</senderName>
+            <template>Case_Support/CaseCreatedFromWeb</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Member_Portal_Requests</fullName>
+    <active>true</active>
+    <businessProcess>Member Portal Cases</businessProcess>
+    <description>Member Requests for Support</description>
+    <label>Member Portal Requests</label>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>APS email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member Portal</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Programs email</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Account Updates</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Advocacy%2FPolicy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diaper Bank Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundraising%2FFinancial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoices%2C billing%2C dues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership %26 Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing%2FPR%2FEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member portal access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations %26 Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Period Supply Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing%2FSourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media%2FGraphics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>APS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NDBN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

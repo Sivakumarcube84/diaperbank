@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Women4Women Tempe, Inc. Customer User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Women4Women Tempe, Inc. Customer User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>Women4WomenTempeIncCustomerManager</parentRole>
+</Role>

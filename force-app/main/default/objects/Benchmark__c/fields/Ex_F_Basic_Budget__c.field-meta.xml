@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_F_Basic_Budget__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A basic budget has been created for the diaper program.</description>
+    <inlineHelpText>A basic budget has been created for the diaper program.</inlineHelpText>
+    <label>Ex-F Basic Budget</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

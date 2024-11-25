@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_O_Eligibility_Policy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A selection strategy has been established for potential partner agencies and is readily available. For direct service, eligibility criteria is made available to the public.</description>
+    <inlineHelpText>A selection strategy has been established for potential partner agencies and is readily available. For direct service, eligibility criteria is made available to the public.</inlineHelpText>
+    <label>Em-O Eligibility Policy</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

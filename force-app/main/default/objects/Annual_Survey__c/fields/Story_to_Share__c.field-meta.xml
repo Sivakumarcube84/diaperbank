@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Story_to_Share__c</fullName>
+    <inlineHelpText>Share one of your best stories from 2020 with us. For this question, you may be asked to participate in an interview with NDBN that will be featured on the website, on social media, or with donors that will highlight this story</inlineHelpText>
+    <label>Story to Share</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

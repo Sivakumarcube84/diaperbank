@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diaper_Rash_Cream__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Diapering Supplies (Diaper Rash Cream)</inlineHelpText>
+    <label>Diaper Rash Cream</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayclassy__Payment_Fee_On_Top__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, this field indicates that the donor has elected to pay the portion of Classy fees associated with the donation.</description>
+    <inlineHelpText>If checked, this field indicates that the donor has elected to pay the portion of Classy fees associated with the donation.</inlineHelpText>
+    <label>Donor Selected Classy Mode</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

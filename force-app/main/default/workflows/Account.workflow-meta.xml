@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Assigned_Staff_Clear</fullName>
+        <description>Resets Assigned staff at the beginning of each year</description>
+        <field>Assigned_staff__c</field>
+        <name>Assigned Staff Clear</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Of_AS_clear</fullName>
+        <description>Reset Status of AS every January</description>
+        <field>Status_of_AS__c</field>
+        <name>Status Of AS clear</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_APS_Relationship</fullName>
+        <description>The APS Relationship field will be updated with the appropriate value based on the APS Program Status during lead conversion</description>
+        <field>APS_Member_Type__c</field>
+        <literalValue>Interested</literalValue>
+        <name>Update APS Relationship</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Account_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Diaper_Bank</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Account Record Type to Basic Need</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account%2EUpdate-APSRelationship</fullName>
+        <actions>
+            <name>Update_APS_Relationship</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.APS_Program_Status__c</field>
+            <operation>equals</operation>
+            <value>Currently collect and distribute</value>
+        </criteriaItems>
+        <description>Workflow will update the APS Relationship field based on the APS Program Status value</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%2EUpdateAccountRecordType%28Hidden%29</fullName>
+        <actions>
+            <name>Update_Account_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.Account_Record_Type_Hidden__c</field>
+            <operation>equals</operation>
+            <value>APS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Account_Record_Type_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Diaper</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Account Record Type %28Hidden%29</fullName>
+        <actions>
+            <name>Update_Account_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Account_Record_Type_Hidden__c</field>
+            <operation>equals</operation>
+            <value>APS</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Yearly Field Resets</fullName>
+        <actions>
+            <name>Assigned_Staff_Clear</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Status_Of_AS_clear</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Reset fields  every January</description>
+        <formula>AND(Day(TODAY()) = 2, Month(TODAY()) = 1) = TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

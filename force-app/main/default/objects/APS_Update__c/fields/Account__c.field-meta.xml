@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <label>Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The account you entered is not an APS Allied Member.</errorMessage>
+        <filterItems>
+            <field>Account.APS_Member_Type__c</field>
+            <operation>equals</operation>
+            <value>Allied Member</value>
+        </filterItems>
+        <infoMessage>Lookup Allied Organization Account</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>APS Updates</relationshipLabel>
+    <relationshipName>APS_Updates</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

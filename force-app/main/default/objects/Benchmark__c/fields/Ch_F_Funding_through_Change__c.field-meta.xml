@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_F_Funding_through_Change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Strategy for funding stability through leadership changes is a part of succession planning.</description>
+    <inlineHelpText>Strategy for funding stability through leadership changes is a part of succession planning.</inlineHelpText>
+    <label>Ch-F Funding through Change</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

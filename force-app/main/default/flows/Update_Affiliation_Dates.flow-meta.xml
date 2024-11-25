@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <name>check_for_change</name>
+        <label>check for date</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Update_end_date_to_current_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>changed_to_former</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.npe5__EndDate__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>1900-01-01</dateValue>
+                </rightValue>
+            </conditions>
+            <label>No Change to Former</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_for_date</name>
+        <label>Check for date</label>
+        <locationX>1282</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Set_status_and_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Current_date_set</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.npe5__StartDate__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>1900-01-01</dateValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_status_only</targetReference>
+            </connector>
+            <label>Current date set?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Status_Changed</name>
+        <label>Is Status Changed</label>
+        <locationX>666</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Check_for_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Nothing</defaultConnectorLabel>
+        <rules>
+            <name>Status_changed_to_Former</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.npe5__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Former</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>check_for_change</targetReference>
+            </connector>
+            <label>Status changed to Former</label>
+        </rules>
+        <rules>
+            <name>Status_changede_to_Current</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.npe5__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Current</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_Start_Date</targetReference>
+            </connector>
+            <label>Status changede to Current</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_there_a_current_date</name>
+        <label>Is there a current date</label>
+        <locationX>534</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Create_Current_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Current_date_exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.npe5__StartDate__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateValue>1900-01-01</dateValue>
+                </rightValue>
+            </conditions>
+            <label>Current date exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>update_Start_Date</name>
+        <label>update Start Date</label>
+        <locationX>710</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>setstartdate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Status given</defaultConnectorLabel>
+        <rules>
+            <name>Is_start_date_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.npe5__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Current</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_there_a_current_date</targetReference>
+            </connector>
+            <label>Record marked as Current</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Update Affiliation Dates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Affiliation Dates</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Create_Current_date</name>
+        <label>Create Current date</label>
+        <locationX>622</locationX>
+        <locationY>647</locationY>
+        <inputAssignments>
+            <field>npe5__StartDate__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_status_and_date</name>
+        <label>Set status and date</label>
+        <locationX>1414</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>npe5__StartDate__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>npe5__Status__c</field>
+            <value>
+                <stringValue>Current</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>setstartdate</name>
+        <label>set start date</label>
+        <locationX>886</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>npe5__StartDate__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>npe5__Status__c</field>
+            <value>
+                <stringValue>Current</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_end_date_to_current_date</name>
+        <label>Update end date to current date</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>npe5__EndDate__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_status_only</name>
+        <label>Update status only</label>
+        <locationX>1150</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>npe5__Status__c</field>
+            <value>
+                <stringValue>Current</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>540</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Status_Changed</targetReference>
+        </connector>
+        <object>npe5__Affiliation__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

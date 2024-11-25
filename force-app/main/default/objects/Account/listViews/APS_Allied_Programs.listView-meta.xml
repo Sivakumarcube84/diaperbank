@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Allied_Programs</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>Member_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>APS_Primary_Contact__c</columns>
+    <columns>APS_Primary_Contact_Email__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>X2022_APS_Total_Distribution__c</columns>
+    <columns>Menstruators_Served_Monthly__c</columns>
+    <columns>Partner_Agencies_Total_Basic_Needs_Bank__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>Group__c</columns>
+    <columns>Governing_Organization_Exact_Name__c</columns>
+    <columns>Annual_Operating_Budget__c</columns>
+    <columns>Paid_Staff__c</columns>
+    <columns>APS_Membership_Date__c</columns>
+    <columns>FA_Date_Submitted__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>APS_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>Allied Member</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>A11,A12,Addams</value>
+    </filters>
+    <label>APS Allied Members</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

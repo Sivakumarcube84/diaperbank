@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2013_Partner_Application_Accepted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>has the partner been accepted into one of our partner programs</description>
+    <label>2013 Partner Application Accepted</label>
+    <type>Checkbox</type>
+</CustomField>

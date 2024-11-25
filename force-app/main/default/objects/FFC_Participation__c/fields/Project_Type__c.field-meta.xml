@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Type__c</fullName>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capacity building</fullName>
+                <default>false</default>
+                <label>Capacity building</label>
+            </value>
+            <value>
+                <fullName>Supply Drive program</fullName>
+                <default>false</default>
+                <label>Supply Drive program</label>
+            </value>
+            <value>
+                <fullName>Fundraising/event plan</fullName>
+                <default>false</default>
+                <label>Fundraising/event plan</label>
+            </value>
+            <value>
+                <fullName>Marketing-PR/website</fullName>
+                <default>false</default>
+                <label>Marketing-PR/website</label>
+            </value>
+            <value>
+                <fullName>Program development</fullName>
+                <default>false</default>
+                <label>Program development</label>
+            </value>
+            <value>
+                <fullName>Staff/board development</fullName>
+                <default>false</default>
+                <label>Staff/board development</label>
+            </value>
+            <value>
+                <fullName>Warehouse/expansion</fullName>
+                <default>false</default>
+                <label>Warehouse/expansion</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Geographic barriers</fullName>
+                <default>false</default>
+                <label>Geographic barriers</label>
+            </value>
+            <value>
+                <fullName>Demonstration Grant</fullName>
+                <default>false</default>
+                <label>Demonstration Grant</label>
+            </value>
+            <value>
+                <fullName>Advocacy development</fullName>
+                <default>false</default>
+                <label>Advocacy development</label>
+            </value>
+            <value>
+                <fullName>Emergency/Disaster</fullName>
+                <default>false</default>
+                <label>Emergency/Disaster</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Strategic Partnership</fullName>
+                <default>false</default>
+                <label>Strategic Partnership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

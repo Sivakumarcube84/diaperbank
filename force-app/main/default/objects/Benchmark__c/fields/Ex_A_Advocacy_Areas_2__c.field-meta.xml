@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_A_Advocacy_Areas_2__c</fullName>
+    <description>Auto Check box if member survey listed 2 or more (out of 15) advocacy areas active.
+Formulated from Salesforce field &quot;BAQ advocacy areas count&quot;</description>
+    <formula>BAQ_Advocacy_Areas_Count__c  &gt;= 2</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Auto Check box if member survey listed 2 or more (out of 15) advocacy areas active.</inlineHelpText>
+    <label>Ex-A Advocacy Areas (2)</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

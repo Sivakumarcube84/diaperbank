@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Program_Status__c</fullName>
+    <label>APS Program Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Currently collect and distribute</fullName>
+                <default>false</default>
+                <label>Currently collect and distribute</label>
+            </value>
+            <value>
+                <fullName>Interested in collecting and distributing</fullName>
+                <default>false</default>
+                <label>Interested in collecting and distributing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

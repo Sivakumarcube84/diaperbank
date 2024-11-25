@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>X18009_Beauty_Initiative_Inc</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>18009 Beauty Initiative Inc.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

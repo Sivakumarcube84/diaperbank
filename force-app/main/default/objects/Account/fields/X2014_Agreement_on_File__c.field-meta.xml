@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2014_Agreement_on_File__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Agreement signed and submitted (2014-current)</description>
+    <label>Member Agreement on File</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

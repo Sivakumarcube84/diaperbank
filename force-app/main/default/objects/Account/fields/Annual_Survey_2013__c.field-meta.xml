@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Survey_2013__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Completed the 2013 annual NDBN diaper bank report</description>
+    <label>Annual Survey 2013</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

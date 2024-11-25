@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Board_Composition_50__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>50% or more of board members identify as Black or African American</inlineHelpText>
+    <label>50% Board is Black</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

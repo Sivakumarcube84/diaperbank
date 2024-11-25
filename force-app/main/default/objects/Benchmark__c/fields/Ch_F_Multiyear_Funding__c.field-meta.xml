@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_F_Multiyear_Funding__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Multiple years of demonstrated ability to secure sustainable funding.</description>
+    <inlineHelpText>Multiple years of demonstrated ability to secure sustainable funding.</inlineHelpText>
+    <label>Ch-F Multiyear Funding</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

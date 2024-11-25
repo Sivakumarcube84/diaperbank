@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Demographic_Data</fullName>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account.NDBN_Member_Type__c</columns>
+    <columns>Lived_experience__c</columns>
+    <columns>Black_African_American_African__c</columns>
+    <columns>Asian_American__c</columns>
+    <columns>Hispanic_Latinx__c</columns>
+    <columns>Native_American_Indigenous__c</columns>
+    <columns>Native_Hawaiian_or_Pacific_Islander__c</columns>
+    <columns>Multi_racial_Multi_ethnic__c</columns>
+    <columns>White_Caucasian_European__c</columns>
+    <columns>Not_Listed__c</columns>
+    <columns>Decline_to_Identify_Race_Ethnicity__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Demographic_Data_Update_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2022</value>
+    </filters>
+    <label>Contact Demographic Data</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

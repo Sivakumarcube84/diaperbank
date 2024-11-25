@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_A_National_Local__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Participation in national level initiatives translates into local level activities. Member incorporates NDBN&apos;s national initiatives into local activities, leveraging NDBN programs (DNAW) or resources (such as donated product, grants, or published materials) to increase financial support and human resources locally.</description>
+    <inlineHelpText>Participation in national level initiatives translates into local level activities.</inlineHelpText>
+    <label>Su-A_National_Local</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

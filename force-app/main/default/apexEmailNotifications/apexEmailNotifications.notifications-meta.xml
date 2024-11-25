@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexEmailNotifications xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apexEmailNotification>
+        <user>tim@diaperbanknetwork.org</user>
+    </apexEmailNotification>
+    <apexEmailNotification>
+        <user>christina.duwors+ndbn@arkusinc.com</user>
+    </apexEmailNotification>
+    <apexEmailNotification>
+        <email>hamza.khan+ndbn@arkusinc.com</email>
+    </apexEmailNotification>
+    <apexEmailNotification>
+        <user>susan@diaperbanknetwork.org</user>
+    </apexEmailNotification>
+</ApexEmailNotifications>

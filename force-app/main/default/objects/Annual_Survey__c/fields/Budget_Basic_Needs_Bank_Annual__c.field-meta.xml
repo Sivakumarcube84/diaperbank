@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Basic_Needs_Bank_Annual__c</fullName>
+    <defaultValue>0</defaultValue>
+    <inlineHelpText>Provide the Basic Needs Bank&apos;s annual operating budget for the current year. Enter 0 if you aren&apos;t sure or do not have a budget for the basic needs bank.</inlineHelpText>
+    <label>Budget-Basic Needs Bank Annual</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

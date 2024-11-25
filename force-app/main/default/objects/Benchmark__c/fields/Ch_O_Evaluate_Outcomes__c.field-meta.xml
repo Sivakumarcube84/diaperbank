@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_O_Evaluate_Outcomes__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Organization has developed or adopted a mechanism for ongoing evaluation measuring success in achieving targeted population-based outcomes.</description>
+    <inlineHelpText>Organization has developed or adopted a mechanism for ongoing evaluation measuring success in achieving targeted population-based outcomes.</inlineHelpText>
+    <label>Ch-O Evaluate Outcomes</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

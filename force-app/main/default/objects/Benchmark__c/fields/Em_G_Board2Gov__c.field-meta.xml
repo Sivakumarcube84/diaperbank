@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_G_Board2Gov__c</fullName>
+    <description>Formula must have 6 or more board members and 3 of 6 board criteria</description>
+    <formula>(Board_6_or_more_members__c  = 1)&amp;&amp;( Board_benchmark_tally__c  &gt;= 3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Formula must have 6 or more board members and 3 of 6 board criteria</inlineHelpText>
+    <label>Em-G Board2Gov</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

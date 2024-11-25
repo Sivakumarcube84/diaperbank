@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_G_Insurance__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Adequate insurance is secured (must include, at minimum, Directors and Officers).</description>
+    <inlineHelpText>Adequate insurance is secured (must include, at minimum, Directors and Officers).</inlineHelpText>
+    <label>Em-G Insurance</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_by_Susan</fullName>
+    <columns>NAME</columns>
+    <columns>State__c</columns>
+    <columns>Diaper_Bank_Active__c</columns>
+    <columns>County_Name__c</columns>
+    <columns>Account_Name__c</columns>
+    <columns>County_Information__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Diaper_Bank_Active__c</field>
+        <operation>equals</operation>
+        <value>Diaper Bank Active</value>
+    </filters>
+    <label>Diapers</label>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pads_and_Liners_2021_Distribution__c</fullName>
+    <description>total number of pads and liners distributed, reported on quarterly updates. This field is to compare with Huggies&apos; donations..</description>
+    <inlineHelpText>total number of pads and liners distributed, reported on quarterly updates. This field is to compare with Huggies&apos; donations.</inlineHelpText>
+    <label>Pads and Liners 2021 Distribution</label>
+    <summarizedField>APS_Update__c.Pads_and_Liners_Distributed__c</summarizedField>
+    <summaryForeignKey>APS_Update__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

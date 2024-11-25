@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_of_Project__c</fullName>
+    <label>Status of Project</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applied</fullName>
+                <default>true</default>
+                <label>Applied</label>
+            </value>
+            <value>
+                <fullName>Started</fullName>
+                <default>false</default>
+                <label>Started</label>
+            </value>
+            <value>
+                <fullName>On-track at Mid-Year</fullName>
+                <default>false</default>
+                <label>On-track at Mid-Year</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Extended</fullName>
+                <default>false</default>
+                <label>Extended</label>
+            </value>
+            <value>
+                <fullName>Noncompliant</fullName>
+                <default>false</default>
+                <label>Noncompliant</label>
+            </value>
+            <value>
+                <fullName>Did not fund</fullName>
+                <default>false</default>
+                <label>Did not fund</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

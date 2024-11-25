@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_FQ_Diapers__c</fullName>
+    <externalId>false</externalId>
+    <formula>Newborn_FQ__c  +  Size_1_FQ__c  +  Size_2_FQ__c  +  Size_3_FQ__c  +  Size_4_FQ__c  + Size_5_FQ__c  + Size_6_FQ__c  + Size_7_FQ__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total FQ Diapers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

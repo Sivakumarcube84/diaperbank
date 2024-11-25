@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>Changed_Prefferred_Address</flowApiName>
+    <label>test address change</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;Active_Start_Date__c&quot;:&quot;2023-12-07&quot;,&quot;Bay_Fits_53_ft_Truck__c&quot;:true,&quot;Contact_Email__c&quot;:&quot;tim@diaperbanknetwork.org&quot;,&quot;Contact_Phone__c&quot;:&quot;203-788-9080&quot;,&quot;Delivery_Contact_for_trucker_to_call__c&quot;:&quot;Lawrence&quot;,&quot;Loading_Dock_or_Forklift__c&quot;:true,&quot;Preferred_or_Qualifying_Ship_to_Address__c&quot;:true,&quot;Shipping_City__c&quot;:&quot;Stamford&quot;,&quot;Shipping_Country__c&quot;:&quot;United States&quot;,&quot;Shipping_State__c&quot;:&quot;Connecticut&quot;,&quot;Shipping_Street__c&quot;:&quot;60 winterbrook rd&quot;,&quot;Shipping_Zip__c&quot;:&quot;06902&quot;,&quot;Space_in_Sq_Ft__c&quot;:&quot;43000&quot;,&quot;Storage_Space_Type__c&quot;:&quot;Consumer/container storage space&quot;}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>Update_Records_2</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+    </testPoints>
+</FlowTest>

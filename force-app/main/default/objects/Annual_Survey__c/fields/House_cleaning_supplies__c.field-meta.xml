@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>House_cleaning_supplies__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>floor cleaner, window cleaner, etc.</description>
+    <label>House cleaning supplies</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

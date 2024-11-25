@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experience_Cloud_Member</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Member_ID__c</columns>
+    <columns>npe01__One2OneContact__c</columns>
+    <columns>Primary_Contact_Email__c</columns>
+    <columns>NDBN_Membership_Date__c</columns>
+    <columns>Dues_Expiration_NDBN_only__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Experience Cloud Member</label>
+</ListView>

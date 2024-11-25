@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_F_Development_Areas_2__c</fullName>
+    <description>Auto Check box if member survey listed 2 or more (out of 9) development areas active.
+Formulated from Salesforce field &quot;BAQ development areas count&quot;</description>
+    <formula>BAQ_Development_Areas_Count__c  &gt;= 2</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Auto Check box if member survey listed 2 or more (out of 9) development areas active.</inlineHelpText>
+    <label>Ex-F Development Areas (2)</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

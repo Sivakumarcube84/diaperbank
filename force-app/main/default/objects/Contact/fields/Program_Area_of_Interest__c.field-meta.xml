@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Area_of_Interest__c</fullName>
+    <label>Program Area of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alliance for Period Supplies</fullName>
+                <default>false</default>
+                <label>Alliance for Period Supplies</label>
+            </value>
+            <value>
+                <fullName>Basic Needs Curriculum</fullName>
+                <default>false</default>
+                <label>Basic Needs Curriculum</label>
+            </value>
+            <value>
+                <fullName>Diaper Distribution</fullName>
+                <default>false</default>
+                <label>Diaper Distribution</label>
+            </value>
+            <value>
+                <fullName>Disaster Relief</fullName>
+                <default>false</default>
+                <label>Disaster Relief</label>
+            </value>
+            <value>
+                <fullName>Funds for Change</fullName>
+                <default>false</default>
+                <label>Funds for Change</label>
+            </value>
+            <value>
+                <fullName>Policy</fullName>
+                <default>false</default>
+                <label>Policy</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Technical Assistance</fullName>
+                <default>false</default>
+                <label>Technical Assistance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

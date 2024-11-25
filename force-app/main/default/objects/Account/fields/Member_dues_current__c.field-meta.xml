@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Member_dues_current__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( (YEAR(Dues_Expiration_NDBN_only__c) &gt;= YEAR(DATEVALUE( NOW() ))), 
+&quot;Yes&quot;, 
+&quot;No&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Dues Expiration = This Year</inlineHelpText>
+    <label>Member dues current</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

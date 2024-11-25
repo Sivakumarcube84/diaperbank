@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ch_G_Stakeholders_in_Strategic__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A demonstrated process for stakeholder input in strategic planning which considers diversity and inclusiveness across communities in the targeted geographic service area(s).</description>
+    <inlineHelpText>A demonstrated process for stakeholder input in strategic planning which considers diversity and inclusiveness across communities in the targeted geographic service area(s).</inlineHelpText>
+    <label>Ch-G Stakeholders in Strategic</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

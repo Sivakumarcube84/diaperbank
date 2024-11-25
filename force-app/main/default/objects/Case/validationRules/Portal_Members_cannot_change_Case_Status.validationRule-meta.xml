@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Members_cannot_change_Case_Status</fullName>
+    <active>true</active>
+    <description>Prevents profile &quot;NBDN Portal Member&quot; from updating Case &quot;Status&quot; field</description>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Status),
+$Profile.Name = &quot;NBDN Portal Member&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Changing status of cases is not permitted for site users.</errorMessage>
+</ValidationRule>

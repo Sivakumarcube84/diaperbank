@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALL_DDDRP_Accounts</fullName>
+    <columns>DDDRP__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npe01__One2OneContact__c</columns>
+    <columns>Region__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>Total_Diaper_Distribution_Last_Year__c</columns>
+    <columns>Service_Profile_Note__c</columns>
+    <columns>Guidestar_Profile__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DDDRP__c</field>
+        <operation>contains</operation>
+        <value>cohort 1,cohort 2,cohort 3</value>
+    </filters>
+    <label>ALL DDDRP Accounts</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

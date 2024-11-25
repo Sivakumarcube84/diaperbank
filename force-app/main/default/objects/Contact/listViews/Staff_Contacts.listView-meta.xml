@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Contacts</fullName>
+    <booleanFilter>1 AND (2 OR 3) and 4</booleanFilter>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npsp__Primary_Affiliation__c</columns>
+    <columns>npo02__Household__c</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>Account.Member_ID__c</columns>
+    <columns>Contact_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>A11,A12,Addams</value>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CONTACT.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>UPDATEDBY_USER.ALIAS</field>
+        <operation>notContain</operation>
+        <value>Arkus,b2b</value>
+    </filters>
+    <label>Staff Contact Type Usage</label>
+</ListView>

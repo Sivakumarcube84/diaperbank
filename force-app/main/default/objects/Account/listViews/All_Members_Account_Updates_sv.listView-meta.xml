@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Members_Account_Updates_sv</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>Member_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Annual_Survey_Review_Note__c</columns>
+    <columns>FA_Date_Submitted__c</columns>
+    <columns>NDBN_Member_Type__c</columns>
+    <columns>APS_Member_Type__c</columns>
+    <columns>npe01__One2OneContact__c</columns>
+    <columns>APS_Primary_Contact__c</columns>
+    <columns>Assigned_staff__c</columns>
+    <columns>Dues_Expiration_NDBN_only__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Diaper_Bank</value>
+    </filters>
+    <filters>
+        <field>NDBN_Member_Type__c</field>
+        <operation>equals</operation>
+        <value>Certified,Certified Member,Established,Established Member,Sustaining,Change Leader,APS only</value>
+    </filters>
+    <filters>
+        <field>Member_ID__c</field>
+        <operation>notEqual</operation>
+        <value>54321,54398,54322</value>
+    </filters>
+    <filters>
+        <field>Annual_Survey_Submitted__c</field>
+        <operation>equals</operation>
+        <value>No</value>
+    </filters>
+    <label>All Members  - Surveys Late</label>
+</ListView>

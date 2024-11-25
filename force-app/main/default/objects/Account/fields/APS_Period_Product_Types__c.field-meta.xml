@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Period_Product_Types__c</fullName>
+    <label>APS Period Product Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pads</fullName>
+                <default>false</default>
+                <label>Pads</label>
+            </value>
+            <value>
+                <fullName>Liners</fullName>
+                <default>false</default>
+                <label>Liners</label>
+            </value>
+            <value>
+                <fullName>Tampons</fullName>
+                <default>false</default>
+                <label>Tampons</label>
+            </value>
+            <value>
+                <fullName>Reusable Cup</fullName>
+                <default>false</default>
+                <label>Reusable Cup</label>
+            </value>
+            <value>
+                <fullName>Reusable Cloth Pads</fullName>
+                <default>false</default>
+                <label>Reusable Cloth Pads</label>
+            </value>
+            <value>
+                <fullName>Other Item Not Listed</fullName>
+                <default>false</default>
+                <label>Other Item Not Listed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

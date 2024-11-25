@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diaper_Donations_Offered_This_Year__c</fullName>
+    <inlineHelpText>Count of product donation records with donation type = diapers, this year</inlineHelpText>
+    <label>Diaper Donations Offered This Year</label>
+    <summaryFilterItems>
+        <field>Product_Donation__c.CreatedDate</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023, 12:00 AM</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Product_Donation__c.Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Diapers</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Product_Donation__c.Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

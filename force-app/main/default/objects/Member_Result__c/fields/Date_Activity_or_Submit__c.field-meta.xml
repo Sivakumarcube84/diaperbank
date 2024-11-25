@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Activity_or_Submit__c</fullName>
+    <inlineHelpText>This date may vary depending on the program type. It&apos;s meant to be a reference for when the activity took place or when the member sent in the result (which should be near the activity time).</inlineHelpText>
+    <label>Date of Activity or Submit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

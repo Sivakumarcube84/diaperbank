@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Su_F_Grants__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Grants are routinely secured and all grant reporting requirements are completed.</description>
+    <inlineHelpText>Grants are routinely secured and all grant reporting requirements are completed.</inlineHelpText>
+    <label>Su-F Grants</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

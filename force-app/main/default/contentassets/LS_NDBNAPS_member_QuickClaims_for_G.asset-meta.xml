@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>LS_NDBNAPS_member_QuickClaims_for_G</masterLabel>
+    <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>Member Portal</name>
+        </network>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>false</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>LS NDBN-APS member QuickClaims for GuideStar Profiles.pdf</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

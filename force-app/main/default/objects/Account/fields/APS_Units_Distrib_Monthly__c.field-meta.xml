@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APS_Units_Distrib_Monthly__c</fullName>
+    <description>Average number of product units distributed per month</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Average number of product units distributed per month</inlineHelpText>
+    <label>APS Units Distrib Monthly (avg)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

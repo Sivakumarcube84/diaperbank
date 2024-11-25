@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_Method__c</fullName>
+    <description>Values can be: Agencies, Individuals, both, unknown</description>
+    <inlineHelpText>Individuals - Direct distribution of product to client; Agencies - Partner agencies distribute product to client; Both - Utilize both methods of product distribution</inlineHelpText>
+    <label>Distribution Method NDBN</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agencies</fullName>
+                <default>false</default>
+                <label>Agencies</label>
+            </value>
+            <value>
+                <fullName>Individuals</fullName>
+                <default>false</default>
+                <label>Individuals</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Only Individuals in Our Program</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Only Individuals in Our Program</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other (Please Specify)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other (Please Specify)</label>
+            </value>
+            <value>
+                <fullName>Through Our Own Agency/Church Activities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Through Our Own Agency/Church Activities</label>
+            </value>
+            <value>
+                <fullName>Through our own agency (or church) activities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Through our own agency (or church) activities</label>
+            </value>
+            <value>
+                <fullName>Through our own agency (or church) activities, Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Through our own agency (or church) activities, Other</label>
+            </value>
+            <value>
+                <fullName>Through our own agency (or church) activities, To Both Individuals &amp; Agencies</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Through our own agency (or church) activities, To Both Individuals &amp; Agencies</label>
+            </value>
+            <value>
+                <fullName>Through our own agency (or church) activities, To Both Individuals &amp; Agencies, Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Through our own agency (or church) activities, To Both Individuals &amp; Agencies, Other</label>
+            </value>
+            <value>
+                <fullName>To Agencies, Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Agencies, Other</label>
+            </value>
+            <value>
+                <fullName>To Agencies, Through our own agency (or church) activities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Agencies, Through our own agency (or church) activities</label>
+            </value>
+            <value>
+                <fullName>To Both Individuals &amp; Agencies, Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Both Individuals &amp; Agencies, Other</label>
+            </value>
+            <value>
+                <fullName>To Individuals, Through our own agency (or church) activities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Individuals, Through our own agency (or church) activities</label>
+            </value>
+            <value>
+                <fullName>To Individuals, Through our own agency (or church) activities, Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Individuals, Through our own agency (or church) activities, Other</label>
+            </value>
+            <value>
+                <fullName>To Individuals, Through our own agency (or church) activities, To Both Individuals &amp; Agencies</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Individuals, Through our own agency (or church) activities, To Both Individuals &amp; Agencies</label>
+            </value>
+            <value>
+                <fullName>To Individuals, To Agencies, Through our own agency (or church) activities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Individuals, To Agencies, Through our own agency (or church) activities</label>
+            </value>
+            <value>
+                <fullName>To Individuals, To Agencies, Through our own agency (or church) activities, To Both Individuals &amp; Agencies</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>To Individuals, To Agencies, Through our own agency (or church) activities, To Both Individuals &amp; Agencies</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

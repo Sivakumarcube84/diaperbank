@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dues_Cleared_2024__c</fullName>
+    <inlineHelpText>This field is to reconcile what is in Saleforce</inlineHelpText>
+    <label>Dues Cleared 2024</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unpaid</fullName>
+                <default>false</default>
+                <label>Unpaid</label>
+            </value>
+            <value>
+                <fullName>In Quickbooks</fullName>
+                <default>false</default>
+                <label>In Quickbooks</label>
+            </value>
+            <value>
+                <fullName>Acknowledged</fullName>
+                <default>false</default>
+                <label>Acknowledged</label>
+            </value>
+            <value>
+                <fullName>Void/NA</fullName>
+                <default>false</default>
+                <label>Void/NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

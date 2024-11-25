@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Em_F_Multi_Yr_Fund_Plan__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A Multi-year fundraising plan sets goals and activities (3-5 years).</description>
+    <inlineHelpText>A Multi-year fundraising plan sets goals and activities (3-5 years).</inlineHelpText>
+    <label>Em-F Multi Yr Fund Plan</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
